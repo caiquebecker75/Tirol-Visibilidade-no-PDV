@@ -6,6 +6,7 @@ Salve cada imagem nesta pasta com o nome abaixo (`.jpg`, `.png` ou `.webp`). Ela
 |---|---|---|
 | `display-retratil-fechado` | Display retrátil fechado no trilho (mini embalagem + copo "14 g") | Display retrátil |
 | `display-retratil-aberto` | Display retrátil puxado (tira com ocasiões) | Display retrátil |
+| `regua-gondola` | Régua de gôndola contínua no bloco (recebida) | Régua de gôndola |
 | `stopper-copo` | Stopper 3D: embalagem servindo o copo (recebida) | Wobblers e stopper 3D |
 | `wobblers` | Três wobblers: café da manhã, vitamina, café com leite (recebida) | Wobblers de ocasião |
 | `testeira-atacarejo` | Testeira larga sobre o volume no atacarejo (recebida) | Atacarejo |
