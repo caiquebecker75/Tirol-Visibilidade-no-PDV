@@ -23,10 +23,15 @@ Cada capítulo abre com uma tela-divisória dourada.
 
 ## Apresentação comercial (`apresentacao/`)
 
-Versão para o cliente, no fio Objetivo → Por quê → A ideia → Como → Prova → Próximo passo:
-1 Capa "14 g no seu dia" · 2 Quem é a 75LAB · 3 O objetivo · 4 Por que agora · 5 O que acontece no corredor · 6 Traduzir o benefício (70 g/L → 14 g/copo) · 7 A ideia em três camadas · 8 Linguagem do sistema · 9 Um sistema, duas arquiteturas · 10 Varejo · 11 Atacarejo · 12 Kits por loja e operação · 13 Como medimos · 14 Piloto · 15 O caminho · 16 Próximo passo (insumos, contato e WhatsApp).
+Versão para o cliente (17 telas), com a linguagem do KV BioCiclos + Proteína: preto, ondas de leite (SVG), amarelo, Barlow Condensed em itálico e faixas inclinadas.
+Fio: Abertura → Objetivo → Por quê → A ideia → As peças → Prova → Próximo passo.
+1 Capa KV · 2 Quem é a 75LAB · 3 O objetivo · 4 Por que agora · 5 O que acontece no corredor · 6 A ideia (70 g/L → 14 g/copo e três camadas) · 7 Linguagem · 8 Família de peças · 9 Na gôndola: stoppers · 10 Wobblers de ocasião · 11 Atacarejo: testeira · 12 Ponta de gôndola e display · 13 Kits por loja · 14 Como medimos · 15 Piloto · 16 O caminho · 17 Próximo passo.
 
-Cada tela tem um roteiro de fala (`aside.roteiro`), aberto com a tecla **N**. Usa o mesmo motor e a mesma folha de estilo do planejamento (`../assets/`), mais `apresentacao/comercial.css`. Logos de clientes em `assets/img/clientes/` (os mesmos da proposta Ferrero).
+Cada tela tem roteiro de fala (`aside.roteiro`, tecla **N**). Usa o motor de `../assets/` e a pele `apresentacao/comercial.css`.
+
+**Imagens dos MPDVs:** salve em `assets/img/mpdv/` com os nomes de `assets/img/mpdv/LEIA-ME.md` (`gondola-clip`, `stopper-copo`, `stopper-puxe`, `wobblers`, `testeira-atacarejo`, `ponta-gondola`, `display-chao`; `.jpg`, `.png` ou `.webp`). Elas aparecem sozinhas no lugar reservado; sem a imagem, a tela mostra o nome do arquivo esperado.
+
+Logotipo BioCiclos (`assets/img/logos/biociclos-preto.png` e `-branco.png`) recortado do banner oficial do site tirol.com.br.
 
 ## Navegação
 

@@ -85,6 +85,7 @@ function go(i) {
   s.classList.add('on');
   html.classList.toggle('is-dark', s.classList.contains('dark') || s.classList.contains('capa'));
   html.classList.toggle('is-gold', s.classList.contains('capitulo'));
+  html.dataset.slide = s.id;
   $('#num').textContent = `${pad(i + 1)} / ${pad(slides.length)}`;
   $('#tit').textContent = s.dataset.title;
   $('#barra').style.width = ((i + 1) / slides.length * 100) + '%';

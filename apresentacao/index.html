@@ -6,17 +6,46 @@
 <title>Tirol × 75LAB · Visibilidade no PDV · Proposta</title>
 <meta name="description" content="Proposta da 75LAB para a Tirol: um sistema de PDV que faz o BioCiclos + Proteína ser visto, entendido e escolhido no varejo e no atacarejo.">
 <meta name="robots" content="noindex">
-<meta property="og:title" content="Tirol × 75LAB · 14 g no seu dia">
-<meta property="og:description" content="Proposta 75LAB: o bloco BioCiclos que transforma informação nutricional em reconhecimento imediato e facilidade de escolha.">
+<meta property="og:title" content="Tirol BioCiclos × 75LAB · 14 g de proteína por copo">
+<meta property="og:description" content="Proposta 75LAB: o sistema de PDV que transforma o benefício do BioCiclos + Proteína em reconhecimento imediato e facilidade de escolha.">
 <meta property="og:image" content="../assets/img/packs/biociclos-proteina.webp">
-<meta name="theme-color" content="#111111">
+<meta name="theme-color" content="#0b0b0b">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,800;1,600;1,700;1,800;1,900&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/deck.css">
 <link rel="stylesheet" href="comercial.css">
 </head>
 <body>
+
+<!-- ondas de leite (desenhadas em SVG, inspiradas no KV) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="lg-a" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset=".5" stop-color="#ececec"/><stop offset="1" stop-color="#c6c6c6"/></linearGradient>
+    <linearGradient id="lg-b" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset=".45" stop-color="#d9d9d9"/><stop offset=".75" stop-color="#f7f7f7"/><stop offset="1" stop-color="#cfcfcf"/></linearGradient>
+    <linearGradient id="lg-c" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fdfdfd"/><stop offset="1" stop-color="#e2e2e2"/></linearGradient>
+    <filter id="f-suave" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="7"/></filter>
+    <filter id="f-brilho" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="3"/></filter>
+  </defs>
+  <symbol id="onda" viewBox="0 0 1600 300" preserveAspectRatio="none">
+    <path d="M0,110 C170,50 310,170 520,128 C720,88 830,10 1010,62 C1170,108 1270,36 1410,26 C1510,20 1565,52 1600,46 L1600,300 L0,300Z" fill="url(#lg-a)"/>
+    <path d="M0,168 C220,112 390,212 610,172 C830,134 940,82 1120,124 C1290,164 1410,104 1600,112 L1600,300 L0,300Z" fill="url(#lg-c)"/>
+    <path d="M60,150 C260,110 400,200 610,165" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" opacity=".95" filter="url(#f-brilho)"/>
+    <path d="M1030,78 C1170,118 1270,50 1410,40" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" opacity=".9" filter="url(#f-brilho)"/>
+    <path d="M0,230 C260,190 430,262 690,228 C910,200 1060,176 1260,206 C1410,228 1510,198 1600,202 L1600,300 L0,300Z" fill="url(#lg-b)" opacity=".95"/>
+    <path d="M0,250 C300,220 520,280 820,246" fill="none" stroke="#bdbdbd" stroke-width="18" opacity=".35" filter="url(#f-suave)"/>
+    <circle cx="1022" cy="34" r="9" fill="#fff"/><circle cx="1050" cy="14" r="5" fill="#f2f2f2"/><circle cx="498" cy="104" r="7" fill="#fff"/><circle cx="1436" cy="10" r="6" fill="#fff"/>
+  </symbol>
+  <symbol id="redemoinho" viewBox="0 0 600 900" preserveAspectRatio="none">
+    <path d="M0,0 L440,0 C340,90 300,210 380,310 C470,420 430,530 300,570 C190,605 150,705 215,805 C245,850 205,885 160,900 L0,900Z" fill="url(#lg-b)"/>
+    <path d="M0,0 L310,0 C225,110 220,225 285,325 C345,425 285,505 185,545 C95,580 65,690 115,800 C130,840 90,880 60,900 L0,900Z" fill="url(#lg-c)"/>
+    <path d="M0,110 C120,190 160,330 115,440 C75,550 125,650 65,760 L0,800Z" fill="#c4c4c4" opacity=".55" filter="url(#f-suave)"/>
+    <path d="M300,20 C230,120 235,230 300,330 C350,410 310,480 230,520" fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round" opacity=".95" filter="url(#f-brilho)"/>
+    <path d="M410,30 C330,120 320,220 390,310" fill="none" stroke="#bcbcbc" stroke-width="16" opacity=".45" filter="url(#f-suave)"/>
+    <circle cx="455" cy="330" r="9" fill="#fff"/><circle cx="478" cy="300" r="5" fill="#eee"/>
+  </symbol>
+</svg>
+
 <div id="stage" aria-live="polite">
 
   <header id="topo">
@@ -28,27 +57,31 @@
 
   <!-- ===================================================== ABERTURA -->
 
-  <section class="slide capa" id="capa" data-cap="Abertura" data-title="Tirol × 75LAB · Proposta">
-    <div class="txt">
-      <p class="eyebrow rv">Proposta 75LAB · Visibilidade no PDV</p>
-      <h1 class="prop rv">14 g <span>no seu dia.</span></h1>
-      <p class="sub rv">Fazer o BioCiclos + Proteína ser <em>visto, entendido e escolhido</em> no corredor de leites.</p>
-      <div class="meta rv">
-        <div>Para<b>Tirol</b></div>
-        <div>Canais<b>Varejo e atacarejo</b></div>
-        <div>Data<b>Novembro de 2026</b></div>
-      </div>
+  <section class="slide capa dark" id="capa" data-cap="Abertura" data-title="Tirol BioCiclos × 75LAB">
+    <svg class="leite lado" aria-hidden="true"><use href="#redemoinho"/></svg>
+    <svg class="leite baixo" aria-hidden="true" style="height:240px"><use href="#onda"/></svg>
+    <div class="lock rv">
+      <img class="t" src="../assets/img/logos/tirol-preto.svg" alt="Tirol">
+      <img class="b so-desk" src="../assets/img/logos/biociclos-preto.png" alt="BioCiclos"><img class="b so-m" src="../assets/img/logos/biociclos-branco.png" alt="BioCiclos">
+      <div class="tag-evo"><span>A evolução do leite</span></div>
     </div>
-    <div class="visual">
-      <div class="halo" aria-hidden="true"></div>
-      <img class="pack rv" src="../assets/img/packs/biociclos-proteina.webp" alt="Embalagem Tirol BioCiclos + Proteína, leite UHT semidesnatado zero lactose, 1 litro">
-      <div class="selo rv"><b>14 g</b><span>de proteína<br>por copo de 200 ml</span></div>
+    <div class="kvtxt rv">
+      <span class="n">14G <small>DE</small></span>
+      <span class="p">Proteína</span>
+      <span class="faixa"><span>Por copo de 200 ml</span></span>
+      <span class="zl">Zero lactose</span>
     </div>
-    <aside class="roteiro">Obrigado pelo tempo. Vocês nos pediram materiais para dar mais visibilidade ao BioCiclos + Proteína no varejo e no atacarejo. Antes de mostrar peças, queremos mostrar o raciocínio: o que o shopper precisa ver, entender e sentir para escolher esse leite. A proposta cabe numa frase: 14 g no seu dia. O roteiro é simples: o objetivo, por que agora, a ideia, como ela vira PDV, como provamos e o próximo passo.</aside>
+    <img class="pack rv" src="../assets/img/packs/biociclos-proteina.webp" alt="Embalagem Tirol BioCiclos + Proteína, 1 litro">
+    <div class="meta rv">
+      <div>Para<b>Tirol</b></div>
+      <div>Canais<b>Varejo e atacarejo</b></div>
+      <div class="prop">Proposta 75LAB · Visibilidade no PDV<b>Novembro de 2026</b></div>
+    </div>
+    <aside class="roteiro">Obrigado pelo tempo. Vocês nos pediram materiais para dar mais visibilidade ao BioCiclos + Proteína no varejo e no atacarejo. Antes de mostrar peças, vamos mostrar o raciocínio: o que o shopper precisa ver, entender e sentir para escolher esse leite. A ideia cabe nesta tela: 14 g de proteína por copo de 200 ml, zero lactose, com a cara do BioCiclos. O roteiro é simples: o objetivo, por que agora, a ideia, as peças no PDV, como provamos e o próximo passo.</aside>
   </section>
 
   <section class="slide" id="quem" data-cap="Abertura" data-title="Quem é a 75LAB">
-    <p class="eyebrow rv">Quem somos</p>
+    <p class="eyebrow rv"><span>Quem somos</span></p>
     <h2 class="rv">Não somos agência. <em>Somos aceleradora de trade.</em></h2>
     <div class="corpo">
       <div class="fluxo-75 rv"><span>Intenção</span><span>Imersão</span><span>Solução</span><span>Execução</span><span class="ok">Resultado</span></div>
@@ -58,9 +91,8 @@
         <div><b>15 mil<small>+</small></b><span>PDVs positivados</span></div>
         <div><b>15<small>+</small></b><span>anos de trade</span></div>
       </div>
-      <h4 class="rv" style="margin-top:12px">Marcas que já confiaram o PDV à 75LAB</h4>
+      <h4 class="rv" style="margin-top:6px">Marcas que já confiaram o PDV à 75LAB</h4>
       <div class="logos rv">
-        <div><img src="../assets/img/clientes/lactalis.png" alt="Lactalis"></div>
         <div><img src="../assets/img/clientes/parmalat.png" alt="Parmalat"></div>
         <div><img src="../assets/img/clientes/polenghi.png" alt="Polenghi"></div>
         <div><img src="../assets/img/clientes/3coracoes.png" alt="3 Corações"></div>
@@ -71,19 +103,19 @@
       </div>
       <p class="nota rv">Fonte: 75lab.com.br, números da 75LAB; carteira de clientes de 2025 e 2026.</p>
     </div>
-    <aside class="roteiro">Antes da proposta, quem somos. A 75LAB não é uma agência tradicional, é uma aceleradora de trade: partimos da intenção da marca, fazemos imersão, desenhamos a solução, executamos e entregamos resultado. São 95% dos projetos aprovados, até 25% a menos no custo de produção, mais de 15 mil pontos de venda positivados e mais de 15 anos de trade. E conhecemos bem o corredor de lácteos: Lactalis, Parmalat, Polenghi e 3 Corações estão na nossa carteira.</aside>
+    <aside class="roteiro">Antes da proposta, quem somos. A 75LAB não é uma agência tradicional, é uma aceleradora de trade: partimos da intenção da marca, fazemos imersão, desenhamos a solução, executamos e entregamos resultado. São 95% dos projetos aprovados, até 25% a menos no custo de produção, mais de 15 mil pontos de venda positivados e mais de 15 anos de trade. E conhecemos bem o corredor de lácteos: Parmalat, Polenghi e 3 Corações estão na nossa carteira.</aside>
   </section>
 
   <!-- ===================================================== OBJETIVO -->
 
   <section class="slide" id="objetivo" data-cap="Objetivo" data-title="O objetivo">
-    <p class="eyebrow rv">O objetivo</p>
+    <p class="eyebrow rv"><span>O objetivo</span></p>
     <h2 class="rv">Vocês pediram visibilidade. Nós propomos <em>uma vantagem que o shopper percebe</em> na hora da escolha.</h2>
     <div class="corpo">
       <div class="depara rv">
         <div class="card"><h4>O pedido</h4><p>Réguas, stoppers, blocos de marca e testeiras para o BioCiclos + Proteína, em duas aplicações: varejo e atacarejo.</p></div>
         <div class="seta">→</div>
-        <div class="card preto"><h4>O que vamos resolver</h4><p>Transformar a presença física do produto em uma vantagem perceptível no momento da compra.</p></div>
+        <div class="card preto"><h4 style="color:var(--y)">O que vamos resolver</h4><p>Transformar a presença física do produto em uma vantagem perceptível no momento da compra.</p></div>
       </div>
       <div class="g3">
         <div class="card rv"><span class="k">01 · Ser visto</span><h3>Visibilidade</h3><p>Ser encontrado em um corredor visualmente competitivo.</p></div>
@@ -97,38 +129,38 @@
   <!-- ===================================================== POR QUÊ -->
 
   <section class="slide" id="agora" data-cap="Por quê" data-title="Por que agora">
-    <p class="eyebrow rv">Por que agora</p>
+    <p class="eyebrow rv"><span>Por que agora</span></p>
     <h2 class="rv">A proteína entrou na rotina. <em>E na gôndola de todo mundo.</em></h2>
     <div class="corpo">
       <div class="g3">
-        <div class="card rv"><div class="kpi">+12<small>%</small></div><p><b>em valor</b> para produtos com proteína adicionada, no ano móvel até o 1º trimestre de 2026.</p></div>
+        <div class="card rv"><div class="kpi">+12<small>%</small></div><p>em valor para produtos com proteína adicionada, no ano móvel até o 1º trimestre de 2026.</p></div>
         <div class="card rv"><div class="kpi">21<small>% dos lares</small></div><p><b>12,8 milhões de lares</b> já compram produtos com proteína adicionada.</p></div>
-        <div class="card preto rv"><div class="kpi" style="color:#fff">Porção<small style="color:var(--gold-l)"> clara</small></div><p>A quantidade por porção é especialmente importante para quem compra, junto com conveniência e custo-benefício.</p></div>
+        <div class="card preto rv"><div class="kpi">Porção</div><p>A clareza da quantidade por porção pesa na escolha, junto com conveniência e custo-benefício.</p></div>
       </div>
-      <div class="split rv" style="grid-template-columns:1.2fr 1fr;gap:40px;align-items:center">
+      <div class="split rv" style="grid-template-columns:1.25fr 1fr;gap:40px;align-items:center">
         <table class="tbl compacta">
           <thead><tr><th>Leite UHT proteico 1 L</th><th>Comunica</th></tr></thead>
           <tbody>
-            <tr><td>Tirol BioCiclos + Proteína</td><td><b>14 g por copo de 200 ml</b> · zero lactose</td></tr>
+            <tr class="dest"><td>Tirol BioCiclos + Proteína</td><td><b>14 g por copo de 200 ml</b> · zero lactose</td></tr>
             <tr><td>Camponesa Proteína Zero Lactose</td><td>14 g por 200 ml · zero lactose</td></tr>
             <tr><td>Itambé Protein</td><td>10 g por 200 ml · zero lactose</td></tr>
             <tr><td>Piracanjuba Zero Lactose +Protein</td><td>10 g de proteína · zero lactose</td></tr>
           </tbody>
         </table>
-        <p class="frase p">Quando todos falam de proteína, <em>o número sozinho deixa de diferenciar.</em></p>
+        <p class="frase" style="font-size:40px">Quando todos falam de proteína, <em>o número sozinho deixa de diferenciar.</em></p>
       </div>
       <p class="nota rv">Fontes: Worldpanel by Numerator, 13/10/2026 (proteína adicionada em diversas categorias, não especificamente leite UHT); páginas oficiais de produto Tirol, Camponesa, Itambé e Piracanjuba, consultadas em 19/11/2026.</p>
     </div>
     <aside class="roteiro">Por que agora. A proteína saiu da academia e entrou na rotina: produtos com proteína adicionada cresceram 12% em valor e já estão em 21% dos lares, segundo a Worldpanel. E o estudo destaca algo importante para nós: quem compra quer clareza da quantidade por porção. O outro lado é que a gôndola ficou cheia de proteína. A Camponesa comunica os mesmos 14 g por copo; Itambé e Piracanjuba, 10 g. O número continua importante, mas sozinho não diferencia. O que diferencia é a Tirol ser dona da associação entre marca, benefício e presença na gôndola.</aside>
   </section>
 
-  <section class="slide" id="tensao" data-cap="Por quê" data-title="O que acontece no corredor">
-    <p class="eyebrow rv">O que acontece no corredor</p>
+  <section class="slide" id="corredor" data-cap="Por quê" data-title="O que acontece no corredor">
+    <p class="eyebrow rv"><span>O que acontece no corredor</span></p>
     <div class="corpo" style="justify-content:center;margin-top:0">
-      <p class="frase aspas rv">O shopper pode estar aberto a um leite com mais proteína, mas <em>não necessariamente consegue perceber, compreender e justificar</em> essa escolha enquanto compra leite.</p>
+      <p class="frase aspas rv" style="font-size:50px">O shopper pode estar aberto a um leite com mais proteína, mas <em>não necessariamente consegue perceber, entender e justificar</em> essa escolha enquanto compra leite.</p>
       <div class="g4" style="margin-top:30px">
-        <div class="card rv"><span class="k">Compra no automático</span><p>Leite é compra habitual: a marca precisa dialogar com o hábito, não interrompê-lo com esforço.</p></div>
-        <div class="card rv"><span class="k">Caixas claras</span><p>A embalagem branca pode perder contraste diante das outras caixas claras da gôndola.</p></div>
+        <div class="card rv"><span class="k">Compra no automático</span><p>Leite é compra habitual: a marca precisa dialogar com o hábito, sem exigir esforço.</p></div>
+        <div class="card rv"><span class="k">Caixas claras</span><p>A embalagem branca pode perder contraste entre as outras caixas claras da gôndola.</p></div>
         <div class="card rv"><span class="k">Número difícil</span><p>70 g por litro exige conta. A porção do dia a dia é mais fácil de entender.</p></div>
         <div class="card rv"><span class="k">Preço no olhar</span><p>Atenção não é intenção: o valor precisa ficar claro junto com o preço.</p></div>
       </div>
@@ -138,179 +170,175 @@
 
   <!-- ===================================================== A IDEIA -->
 
-  <section class="slide" id="traducao" data-cap="A ideia" data-title="Traduzir o benefício">
-    <p class="eyebrow rv">A ideia, parte 1</p>
-    <h2 class="rv">O número mais útil é o que cabe <em>no copo de todo dia</em>.</h2>
-    <div class="corpo" style="justify-content:center">
-      <div class="traduz rv">
-        <div class="lado a"><b>70 g</b><span>de proteína por litro</span><p>Correto, mas pede interpretação.</p></div>
-        <div class="seta">→</div>
-        <div class="lado b"><b>14 g</b><span>por copo de 200 ml</span><p>A medida da rotina: o shopper entende sem fazer conta.</p></div>
-      </div>
-      <p class="lede rv" style="text-align:center;max-width:none">Sempre “14 g” junto de “200 ml”, com <b>zero lactose</b> como mensagem de apoio.</p>
-    </div>
-    <aside class="roteiro">A primeira decisão é de tradução. A embalagem diz 70 g por litro, o que está correto, mas pede uma conta. Ninguém bebe um litro de leite de uma vez; as pessoas bebem um copo. Então a mensagem do PDV é 14 g por copo de 200 ml, sempre com a porção junto do número para não haver ambiguidade, e zero lactose como apoio. É o mesmo benefício, só que na medida em que o consumidor vive.</aside>
-  </section>
-
-  <section class="slide" id="ideia" data-cap="A ideia" data-title="14 g no seu dia">
-    <p class="eyebrow rv">A ideia, parte 2</p>
-    <h2 class="rv">Um bloco BioCiclos que transforma informação nutricional em <em>reconhecimento imediato</em>.</h2>
+  <section class="slide dark" id="ideia" data-cap="A ideia" data-title="A ideia: 14 g no seu dia">
+    <svg class="leite canto" aria-hidden="true"><use href="#onda"/></svg>
+    <p class="eyebrow rv"><span>A ideia</span></p>
+    <h2 class="rv" style="color:#fff">Traduzir o benefício para <em>o copo de todo dia</em>.</h2>
     <div class="corpo">
-      <div class="split" style="grid-template-columns:1.5fr 1fr;gap:40px;align-items:center">
-        <div class="camadas">
-          <div class="c1 rv"><h4>Mensagem principal</h4><div><div class="t">14 g no seu dia</div><p style="margin-top:6px">O benefício traduzido para a porção cotidiana.</p></div></div>
-          <div class="c2 rv"><h4>Reconhecimento</h4><div><div class="t">A evolução do leite</div><p style="margin-top:6px">O território BioCiclos, que liga o PDV à linha e à embalagem.</p></div></div>
-          <div class="rv"><h4>Camada funcional</h4><div><div class="t">Escolha sem dúvidas</div><p style="margin-top:6px">Produto, benefício e preço organizados numa única área de decisão.</p></div></div>
+      <div class="split" style="grid-template-columns:1fr 1.15fr;gap:48px;align-items:center">
+        <div>
+          <div class="traduz2 rv">
+            <div class="de"><span class="num">70 g</span><small>por litro</small></div>
+            <div class="seta">→</div>
+            <div class="para">14 g<small>por copo de 200 ml</small></div>
+          </div>
+          <p class="rv" style="margin-top:22px;max-width:560px">O mesmo benefício da embalagem, na medida que o consumidor vive: o shopper entende sem fazer conta. Sempre “14 g” junto de “200 ml”, com <b style="color:#fff">zero lactose</b> como apoio.</p>
         </div>
-        <div class="rv" style="display:flex;justify-content:center">
-          <img src="../assets/img/packs/biociclos-proteina.webp" alt="Embalagem BioCiclos + Proteína" style="height:500px;width:auto;filter:drop-shadow(0 30px 30px rgba(0,0,0,.18))">
+        <div class="camadas">
+          <div class="c1 rv"><h4>Mensagem principal</h4><div><div class="t">14 g no seu dia</div><p>Proteína na porção cotidiana, sem linguagem de academia.</p></div></div>
+          <div class="rv"><h4>Reconhecimento</h4><div><div class="t">A evolução do leite</div><p>O território BioCiclos liga o PDV à linha e à embalagem.</p></div></div>
+          <div class="rv"><h4>Camada funcional</h4><div><div class="t">Escolha sem dúvidas</div><p>Produto, benefício e preço numa única área de decisão.</p></div></div>
         </div>
       </div>
-      <p class="nota rv">Frases de conceito para validação; a redação final segue os claims aprovados pela Tirol.</p>
     </div>
-    <aside class="roteiro">A ideia tem três camadas. A mensagem principal é 14 g no seu dia: o benefício na porção cotidiana, sem linguagem de academia, para falar com quem já procura proteína e com quem descobre o produto na compra de rotina. A base de reconhecimento é o território que a linha já tem, A evolução do leite, para que o PDV pareça a embalagem e não uma campanha paralela. E a camada funcional é a escolha sem dúvidas: produto, benefício e preço na mesma área de decisão.</aside>
+    <aside class="roteiro">A ideia começa por uma tradução. A embalagem diz 70 g por litro, o que está correto, mas pede uma conta. Ninguém bebe um litro de uma vez; as pessoas bebem um copo. Então a mensagem do PDV é 14 g por copo de 200 ml, sempre com a porção junto do número, e zero lactose como apoio. Em cima disso, três camadas: a mensagem principal, 14 g no seu dia, que fala com quem já procura proteína e com quem descobre o produto na compra de rotina; o reconhecimento, com o território que a linha já tem, A evolução do leite; e a camada funcional, a escolha sem dúvidas, com produto, benefício e preço na mesma área de decisão.</aside>
   </section>
 
   <section class="slide" id="linguagem" data-cap="A ideia" data-title="Linguagem do sistema">
-    <p class="eyebrow rv">A ideia, parte 3</p>
-    <h2 class="rv">Estender a embalagem até a gôndola, <em>em vez de inventar outra marca</em>.</h2>
+    <p class="eyebrow rv"><span>A linguagem</span></p>
+    <h2 class="rv">Levar a embalagem até a gôndola, <em>em vez de inventar outra marca</em>.</h2>
     <div class="corpo">
-      <div class="split" style="grid-template-columns:1fr 1fr;gap:44px">
+      <div class="split" style="grid-template-columns:1.05fr 1fr;gap:44px">
         <div>
           <table class="tbl rv">
             <tbody>
-              <tr><td style="width:44%">TIROL</td><td>Marca endossante: familiaridade e confiança.</td></tr>
+              <tr><td style="width:40%">TIROL</td><td>Marca endossante: familiaridade e confiança.</td></tr>
               <tr><td>BIOCICLOS</td><td>Identidade de linha: reconhecimento no corredor.</td></tr>
-              <tr class="dest"><td>+ PROTEÍNA</td><td>Benefício: 14 g por copo de 200 ml.</td></tr>
+              <tr class="dest"><td>14 G DE PROTEÍNA</td><td>Benefício, sempre por copo de 200 ml.</td></tr>
               <tr><td>ZERO LACTOSE</td><td>Apoio: visível, sem competir com a mensagem central.</td></tr>
             </tbody>
           </table>
           <div class="g3 rv" style="gap:10px;margin-top:22px">
-            <div class="card" style="padding:14px"><div style="height:30px;border-radius:6px;background:#fff;border:1px solid var(--line)"></div><p style="font-size:15px"><b>Branco</b> · clareza e continuidade com a embalagem.</p></div>
             <div class="card" style="padding:14px"><div style="height:30px;border-radius:6px;background:var(--ink)"></div><p style="font-size:15px"><b>Preto</b> · o contraste que a caixa branca não tem.</p></div>
-            <div class="card" style="padding:14px"><div style="height:30px;border-radius:6px;background:var(--gold)"></div><p style="font-size:15px"><b>Dourado</b> · destaque seletivo e qualidade.</p></div>
+            <div class="card" style="padding:14px"><div style="height:30px;border-radius:6px;background:linear-gradient(180deg,#fff,#dedede);border:1px solid var(--line)"></div><p style="font-size:15px"><b>Leite</b> · o produto como imagem, em ondas.</p></div>
+            <div class="card" style="padding:14px"><div style="height:30px;border-radius:6px;background:var(--y)"></div><p style="font-size:15px"><b>Amarelo</b> · o número e a faixa da porção.</p></div>
           </div>
         </div>
         <div style="display:grid;gap:14px;align-content:start">
-          <div class="card preto rv" style="padding:26px"><span class="k">De longe · 3 a 8 m</span><p style="font-size:20px;color:#fff">Um bloco preto, branco e dourado que diz <b>BioCiclos, Tirol e 14 g</b>.</p></div>
-          <div class="card rv" style="padding:26px"><span class="k">De perto · na mão</span><p style="font-size:20px;color:var(--ink)">Proteína por copo, zero lactose, embalagem de 1 litro e <b>preço legível</b>.</p></div>
-          <div class="packs rv" style="justify-content:center;margin-top:6px">
-            <img src="../assets/img/packs/biociclos-adultos-p.webp" alt="BioCiclos Adultos" style="height:150px">
-            <img src="../assets/img/packs/biociclos-senior-p.webp" alt="BioCiclos Senior 50+" style="height:150px">
-            <img src="../assets/img/packs/biociclos-kids-p.webp" alt="BioCiclos Kids" style="height:150px">
-            <img src="../assets/img/packs/biociclos-proteina-p.webp" alt="BioCiclos + Proteína" style="height:190px;margin-left:8px">
+          <div class="card preto rv" style="padding:26px"><span class="k">De longe · 3 a 8 m</span><p style="font-size:21px;color:#fff;margin:0">Um bloco preto com leite e amarelo que diz <b>BioCiclos, Tirol e 14 g</b>.</p></div>
+          <div class="card rv" style="padding:26px"><span class="k">De perto · na mão</span><p style="font-size:21px;color:var(--ink);margin:0">Proteína por copo, zero lactose, embalagem de 1 litro e <b>preço legível</b>.</p></div>
+          <div class="rv" style="display:flex;align-items:center;justify-content:center;gap:26px;margin-top:4px">
+            <img src="../assets/img/logos/biociclos-preto.png" alt="BioCiclos" style="height:84px;width:auto">
+            <div class="tag-evo"><span>A evolução do leite</span></div>
           </div>
         </div>
       </div>
     </div>
-    <aside class="roteiro">Na linguagem, a regra é estender a embalagem até a gôndola. Tirol entra como marca endossante, trazendo confiança. BioCiclos é o que o shopper reconhece no corredor. O benefício é 14 g por copo, e zero lactose fica visível como apoio. As cores são as da linha: o branco da caixa, o preto que dá o contraste que a caixa branca sozinha não tem, e o dourado para destacar. De longe, o shopper lê BioCiclos, Tirol e 14 g. De perto, encontra a porção, o zero lactose e o preço.</aside>
+    <aside class="roteiro">Na linguagem, a regra é levar a embalagem até a gôndola. Tirol entra como marca endossante, trazendo confiança. BioCiclos é o que o shopper reconhece no corredor. O benefício é 14 g por copo, e zero lactose fica visível como apoio. As cores vêm do key visual: o preto dá o contraste que a caixa branca sozinha não tem, o leite aparece como imagem e o amarelo marca o número e a faixa da porção. De longe, o shopper lê BioCiclos, Tirol e 14 g. De perto, encontra a porção, o zero lactose e o preço.</aside>
   </section>
 
-  <!-- ===================================================== COMO -->
+  <!-- ===================================================== AS PEÇAS -->
 
-  <section class="slide" id="sistema" data-cap="Como" data-title="Um sistema, duas arquiteturas">
-    <p class="eyebrow rv">Como vira PDV</p>
-    <h2 class="rv">Um mesmo sistema visual, <em>duas arquiteturas</em>.</h2>
+  <section class="slide" id="sistema" data-cap="As peças" data-title="Um sistema, duas arquiteturas">
+    <p class="eyebrow rv"><span>Como vira PDV</span></p>
+    <h2 class="rv">Uma família de peças, <em>duas arquiteturas</em>.</h2>
     <div class="corpo">
       <div class="g3">
-        <div class="card preto rv" style="padding:28px"><span class="k">HERO</span><h3 style="font-size:30px;color:#fff">Bloco BioCiclos</h3><p style="font-size:18px">O elemento central para identificar produto e benefício.</p></div>
-        <div class="card rv" style="padding:28px"><span class="k">SUPPORT</span><h3 style="font-size:30px">Peças de apoio</h3><p style="font-size:18px">Régua, stopper, área de preço e orientação de exposição.</p></div>
-        <div class="card creme rv" style="padding:28px"><span class="k">SCALE</span><h3 style="font-size:30px">Kits por loja</h3><p style="font-size:18px">Combinações por espaço, operação e orçamento de cada cluster.</p></div>
+        <div class="card preto rv" style="padding:26px"><span class="k">Hero</span><h3 style="color:#fff;font-size:32px">Bloco BioCiclos</h3><p>Testeira, ponta de gôndola e display: o elemento que identifica produto e benefício.</p></div>
+        <div class="card rv" style="padding:26px"><span class="k">Support</span><h3 style="font-size:32px">Peças de gôndola</h3><p>Stoppers, régua, wobblers de ocasião e área de preço.</p></div>
+        <div class="card ouro rv" style="padding:26px"><span class="k">Scale</span><h3 style="font-size:32px">Kits por loja</h3><p style="color:var(--ink)">Combinações por espaço, operação e orçamento de cada cluster.</p></div>
       </div>
       <div class="g2">
-        <div class="card rv" style="padding:28px"><span class="k">Varejo alimentar</span><h3 style="font-size:32px">Bloco de decisão</h3><p style="font-size:18px">Régua contínua + stopper compacto. Reconhecimento na gôndola, escolha fácil e preço visível.</p></div>
-        <div class="card ouro rv" style="padding:28px"><span class="k">Atacarejo</span><h3 style="font-size:32px">Bloco de visibilidade</h3><p style="font-size:18px">Testeira contrastante + produto em volume. Leitura à distância, preço visível e reposição livre.</p></div>
+        <div class="card rv" style="padding:26px"><span class="k">Varejo alimentar</span><h3 style="font-size:36px">Bloco de decisão</h3><p>Perto da prateleira: stopper, régua e wobblers que param o olhar, explicam os 14 g e deixam o preço visível.</p></div>
+        <div class="card preto rv" style="padding:26px"><span class="k">Atacarejo</span><h3 style="font-size:36px;color:#fff">Bloco de visibilidade</h3><p>Lido de longe: testeira e ponta sobre o volume, com reposição livre e preço à vista.</p></div>
       </div>
     </div>
-    <aside class="roteiro">Como isso vira ponto de venda. Um sistema com três níveis: o Hero, que é o bloco BioCiclos; o Support, com régua, stopper e área de preço; e o Scale, que são kits combinados para cada tipo de loja. E uma decisão importante: varejo e atacarejo não recebem a mesma peça redimensionada. No varejo, o bloco é de decisão, perto da prateleira. No atacarejo, é de visibilidade, lido de longe sobre o volume. Mesma linguagem, arquitetura diferente.</aside>
+    <aside class="roteiro">Como isso vira ponto de venda. Uma família de peças em três níveis: o Hero, que é o bloco BioCiclos em testeira, ponta ou display; o Support, com stoppers, régua, wobblers e área de preço; e o Scale, kits combinados para cada tipo de loja. E uma decisão importante: varejo e atacarejo não recebem a mesma peça redimensionada. No varejo, o bloco é de decisão, perto da prateleira. No atacarejo, é de visibilidade, lido de longe sobre o volume. Vamos ver as peças.</aside>
   </section>
 
-  <section class="slide" id="varejo" data-cap="Como" data-title="Varejo · bloco de decisão">
-    <p class="eyebrow rv">Varejo alimentar · bloco de decisão</p>
-    <h2 class="rv">Na gôndola, o BioCiclos vira <em>um bloco que se explica sozinho</em>.</h2>
+  <section class="slide" id="gondola" data-cap="As peças" data-title="Na gôndola: stoppers">
+    <p class="eyebrow rv"><span>Varejo · na gôndola</span></p>
+    <h2 class="rv">Parar o olhar <em>sem atrapalhar a mão</em>.</h2>
     <div class="corpo">
-      <div class="split" style="grid-template-columns:1.35fr 1fr;gap:40px">
-        <div class="esq rv" aria-label="Esquema do bloco BioCiclos na gôndola">
-          <div class="bloco">
-            <div><div class="ass"><img src="../assets/img/logos/tirol-branco.svg" alt="Tirol">BioCiclos</div><div class="big">14 g <span>de proteína</span></div></div>
-            <div class="por">POR COPO<br>DE 200 ml<small>ZERO LACTOSE</small></div>
-          </div>
-          <div class="prat">
-            <div class="stopper" style="left:-6px;top:30px"><img src="../assets/img/logos/tirol-preto.svg" alt=""><b>14 g</b><span>por copo</span></div>
-            <img src="../assets/img/packs/biociclos-proteina-p.webp" alt=""><img src="../assets/img/packs/biociclos-proteina-p.webp" alt=""><img src="../assets/img/packs/biociclos-proteina-p.webp" alt=""><img src="../assets/img/packs/biociclos-proteina-p.webp" alt=""><img src="../assets/img/packs/biociclos-proteina-p.webp" alt=""><img src="../assets/img/packs/biociclos-proteina-p.webp" alt=""><img src="../assets/img/packs/biociclos-proteina-p.webp" alt="">
-          </div>
-          <div class="regua"><span class="r1">BioCiclos</span><span class="r2">+ Proteína · A evolução do leite</span><span class="r3">14 g / copo</span><span class="preco">R$ —,—</span></div>
-          <div style="height:26px"></div>
-          <span class="rot">Esquema de estudo, não arte final</span>
-        </div>
-        <div style="display:grid;gap:14px;align-content:start">
-          <div class="card rv"><span class="k">Régua contínua</span><p style="margin:0">Na frente da prateleira, na altura do porta-preço, sem cobrir etiquetas.</p></div>
-          <div class="card rv"><span class="k">Stopper compacto</span><p style="margin:0">Perpendicular, interrompe o olhar sem atrapalhar a circulação nem a retirada. Não precisa estar em todas as prateleiras.</p></div>
-          <div class="card rv"><span class="k">Produto agrupado</span><p style="margin:0">Embalagens juntas e de frente para o shopper, com o preço da loja preservado.</p></div>
-          <div class="card creme rv"><span class="k">Opcional</span><p style="margin:0;color:var(--ink)">Destaque superior ou ponta de gôndola onde houver espaço negociado.</p></div>
-        </div>
+      <div class="g3" style="flex:1;min-height:0">
+        <figure class="slot rv" data-slot="gondola-clip"><figcaption><span>Stopper embalagem + copo</span></figcaption><div class="vazio"><b>Stopper embalagem</b>Imagem: assets/img/mpdv/gondola-clip.jpg</div></figure>
+        <figure class="slot rv" data-slot="stopper-copo"><figcaption class="y"><span>Stopper 3D “servindo”</span></figcaption><div class="vazio"><b>Stopper 3D</b>Imagem: assets/img/mpdv/stopper-copo.jpg</div></figure>
+        <figure class="slot rv" data-slot="stopper-puxe"><figcaption><span>Stopper “Puxe”</span></figcaption><div class="vazio"><b>Stopper “Puxe”</b>Imagem: assets/img/mpdv/stopper-puxe.jpg</div></figure>
+      </div>
+      <div class="g3 rv" style="gap:20px">
+        <p class="small" style="font-size:16px">A miniatura da embalagem fixa no trilho de preço e mostra o copo com os 14 g.</p>
+        <p class="small" style="font-size:16px">A embalagem “serve” o copo: a porção de 200 ml vira imagem, sem cobrir o preço.</p>
+        <p class="small" style="font-size:16px">O shopper puxa e descobre os usos: café da manhã, vitamina, café com leite, zero lactose e cálcio.</p>
       </div>
     </div>
-    <aside class="roteiro">No varejo, o BioCiclos vira um bloco que se explica sozinho. Em cima, a assinatura Tirol BioCiclos e os 14 g por copo. Na prateleira, as embalagens agrupadas e de frente. Na borda, uma régua contínua na altura do porta-preço, sem cobrir a etiqueta da loja. E um stopper compacto que interrompe o olhar sem atrapalhar quem passa ou quem pega o produto. A ponta de gôndola entra como opção, onde houver espaço negociado. Isto é um esquema de estudo; a arte final vem depois das fotos e medidas reais.</aside>
+    <aside class="roteiro">No varejo, começamos pela prateleira. Três formas de parar o olhar sem atrapalhar a mão. A primeira é uma miniatura da embalagem presa no trilho de preço, com um copo que mostra os 14 g. A segunda é um stopper 3D em que a embalagem serve o copo: a porção de 200 ml vira imagem, e a etiqueta de preço continua livre. A terceira é um stopper de puxar, que convida a interagir e mostra as ocasiões de uso, do café da manhã ao café com leite, junto com zero lactose e cálcio. Todas fixam no trilho e não bloqueiam a retirada do produto.</aside>
   </section>
 
-  <section class="slide" id="atacarejo" data-cap="Como" data-title="Atacarejo · bloco de visibilidade">
-    <p class="eyebrow rv">Atacarejo · bloco de visibilidade</p>
-    <h2 class="rv">No atacarejo, a mensagem precisa <em>chegar antes do shopper</em>.</h2>
+  <section class="slide" id="ocasioes" data-cap="As peças" data-title="Wobblers de ocasião">
+    <p class="eyebrow rv"><span>Varejo · proteína na rotina</span></p>
+    <h2 class="rv">Mostrar onde os 14 g entram <em>no dia a dia</em>.</h2>
     <div class="corpo">
-      <div class="split" style="grid-template-columns:1.35fr 1fr;gap:40px">
-        <div class="esq rv" aria-label="Esquema de testeira em exposição de volume">
-          <div class="bloco" style="margin:0 20px">
-            <div><div class="ass"><img src="../assets/img/logos/tirol-branco.svg" alt="Tirol">BioCiclos</div><div class="big">14 g <span>de proteína</span></div></div>
-            <div class="por">POR COPO<br>DE 200 ml<small>ZERO LACTOSE · 1 L</small></div>
-          </div>
-          <div class="palete">
-            <div class="cx"><img src="../assets/img/packs/biociclos-proteina-p.webp" alt=""></div><div class="cx"><img src="../assets/img/packs/biociclos-proteina-p.webp" alt=""></div><div class="cx"><img src="../assets/img/packs/biociclos-proteina-p.webp" alt=""></div><div class="cx"><img src="../assets/img/packs/biociclos-proteina-p.webp" alt=""></div><div class="cx"><img src="../assets/img/packs/biociclos-proteina-p.webp" alt=""></div><div class="cx"><img src="../assets/img/packs/biociclos-proteina-p.webp" alt=""></div><div class="cx"><img src="../assets/img/packs/biociclos-proteina-p.webp" alt=""></div>
-            <div class="cx"><img src="../assets/img/packs/biociclos-proteina-p.webp" alt=""></div><div class="cx"><img src="../assets/img/packs/biociclos-proteina-p.webp" alt=""></div><div class="cx"><img src="../assets/img/packs/biociclos-proteina-p.webp" alt=""></div><div class="cx"><img src="../assets/img/packs/biociclos-proteina-p.webp" alt=""></div><div class="cx"><img src="../assets/img/packs/biociclos-proteina-p.webp" alt=""></div><div class="cx"><img src="../assets/img/packs/biociclos-proteina-p.webp" alt=""></div><div class="cx"><img src="../assets/img/packs/biociclos-proteina-p.webp" alt=""></div>
-          </div>
-          <div class="base-pal"></div>
-          <div class="preco-loja"><small>Preço da loja</small>R$ —,—</div>
-          <div style="height:30px"></div>
-          <span class="rot">Esquema de estudo · medidas e fixação dependem da loja</span>
-        </div>
-        <div style="display:grid;gap:14px;align-content:start">
-          <div class="card rv"><span class="k">Testeira contrastante</span><p style="margin:0">Superior ou painel frontal compacto, conforme a estrutura real: ponta, box de piso ou suporte autorizado.</p></div>
-          <div class="card rv"><span class="k">Reposição livre</span><p style="margin:0">Não bloqueia mercadoria nem reabastecimento; respeita empilhamento e regras da rede.</p></div>
-          <div class="card rv"><span class="k">Preço visível</span><p style="margin:0">Embalagens e preços da loja continuam à vista.</p></div>
-          <div class="card creme rv"><span class="k">Peças leves</span><p style="margin:0;color:var(--ink)">Troca rápida e transporte fácil.</p></div>
+      <figure class="slot contain rv" data-slot="wobblers" style="flex:1;min-height:0"><div class="vazio"><b>Wobblers de ocasião</b>Imagem: assets/img/mpdv/wobblers.jpg</div></figure>
+      <div class="g3 rv" style="gap:20px">
+        <div class="card" style="padding:16px 20px"><span class="k">No café da manhã</span><p style="margin:0;font-size:16.5px">Cereal, frutas e leite: a ocasião mais natural.</p></div>
+        <div class="card" style="padding:16px 20px"><span class="k">Na vitamina</span><p style="margin:0;font-size:16.5px">Para quem já busca uma rotina mais nutritiva.</p></div>
+        <div class="card" style="padding:16px 20px"><span class="k">No café com leite</span><p style="margin:0;font-size:16.5px">O hábito de todo dia, agora com proteína.</p></div>
+      </div>
+    </div>
+    <aside class="roteiro">Os wobblers trabalham o território Proteína na rotina. Em vez de falar com o atleta, mostram onde os 14 g entram no dia: no café da manhã, na vitamina e no café com leite. É assim que o produto conversa com quem compra leite por hábito. Cada wobbler leva a assinatura BioCiclos, A evolução do leite, e a faixa com os 14 g de proteína por copo de 200 ml. São peças leves, que podem rodar entre redes e campanhas.</aside>
+  </section>
+
+  <section class="slide dark" id="atacarejo" data-cap="As peças" data-title="Atacarejo: testeira">
+    <p class="eyebrow rv"><span>Atacarejo · bloco de visibilidade</span></p>
+    <h2 class="rv" style="color:#fff">A mensagem precisa <em>chegar antes do shopper</em>.</h2>
+    <div class="corpo">
+      <div class="split" style="grid-template-columns:1.7fr 1fr;gap:36px;flex:1;min-height:0;align-items:stretch">
+        <figure class="slot rv" data-slot="testeira-atacarejo"><figcaption class="y"><span>Testeira sobre o volume</span></figcaption><div class="vazio"><b>Testeira de atacarejo</b>Imagem: assets/img/mpdv/testeira-atacarejo.jpg</div></figure>
+        <div class="peca rv">
+          <h3>O KV no tamanho do corredor</h3>
+          <p>Tirol BioCiclos, 14 g de proteína por copo de 200 ml e zero lactose, lidos a 5–8 m.</p>
+          <ul>
+            <li>Não bloqueia mercadoria nem reabastecimento.</li>
+            <li>Respeita empilhamento, fixação e regras da rede.</li>
+            <li>Preço da loja e embalagens sempre visíveis.</li>
+            <li>Peças leves, de troca rápida e transporte fácil.</li>
+          </ul>
         </div>
       </div>
     </div>
-    <aside class="roteiro">No atacarejo, a lógica muda: o corredor é maior, o produto está em volume e o shopper decide andando. A mensagem precisa chegar antes dele. Por isso, uma testeira contrastante sobre o volume, que se lê de longe: Tirol BioCiclos, 14 g de proteína. E três regras que o operador do atacarejo vai agradecer: a peça não bloqueia mercadoria nem reposição, o preço da loja continua visível e o material é leve, de troca rápida.</aside>
+    <aside class="roteiro">No atacarejo, a lógica muda: o corredor é maior, o produto está em volume e o shopper decide andando. A mensagem precisa chegar antes dele. Por isso, uma testeira que leva o key visual para o tamanho do corredor: Tirol BioCiclos, 14 g de proteína por copo, zero lactose, lidos de cinco a oito metros. E as regras que o operador do atacarejo vai agradecer: a peça não bloqueia mercadoria nem reposição, respeita o empilhamento, o preço continua visível e o material é leve.</aside>
   </section>
 
-  <section class="slide" id="kits" data-cap="Como" data-title="Kits por loja e operação">
-    <p class="eyebrow rv">Como escala</p>
+  <section class="slide" id="destaque" data-cap="As peças" data-title="Ponta de gôndola e display">
+    <p class="eyebrow rv"><span>Onde houver espaço negociado</span></p>
+    <h2 class="rv">Ponta e display para <em>as lojas estratégicas</em>.</h2>
+    <div class="corpo">
+      <div class="split" style="grid-template-columns:1.55fr 1fr;gap:28px;flex:1;min-height:0;align-items:stretch">
+        <figure class="slot rv" data-slot="ponta-gondola"><figcaption><span>Ponta de gôndola BioCiclos</span></figcaption><div class="vazio"><b>Ponta de gôndola</b>Imagem: assets/img/mpdv/ponta-gondola.jpg</div></figure>
+        <figure class="slot rv" data-slot="display-chao"><figcaption class="y"><span>Display de chão embalagem</span></figcaption><div class="vazio"><b>Display de chão</b>Imagem: assets/img/mpdv/display-chao.jpg</div></figure>
+      </div>
+      <p class="small rv" style="font-size:16px">Peças do cluster A: entram onde a rede permite e o investimento se justifica. A embalagem gigante transforma o próprio produto em ponto de venda.</p>
+    </div>
+    <aside class="roteiro">Nas lojas estratégicas, onde há espaço negociado, o bloco cresce. A ponta de gôndola leva o key visual completo sobre as prateleiras, com o produto organizado e o preço em cada nível. E o display de chão transforma a própria embalagem em ponto de venda: uma caixa gigante de BioCiclos + Proteína que se reconhece de qualquer lugar da loja. São peças do cluster A: entram onde a rede permite e onde o volume justifica o investimento.</aside>
+  </section>
+
+  <section class="slide" id="kits" data-cap="As peças" data-title="Kits por loja">
+    <p class="eyebrow rv"><span>Como escala</span></p>
     <h2 class="rv">O kit certo para cada loja, <em>feito para a operação real</em>.</h2>
     <div class="corpo">
-      <div class="g3">
-        <div class="card cl rv"><span class="lt">A</span><h3>Estratégico</h3><p>Alto volume, espaço negociado e maior investimento.</p><p style="color:var(--ink)"><b>Kit:</b> bloco completo, comunicação superior e eventual ponta.</p><div class="barra-kit"><i class="on"></i><i class="on"></i><i class="on"></i></div></div>
-        <div class="card cl rv"><span class="lt">B</span><h3>Intermediário</h3><p>Espaço limitado, mas exposição regular.</p><p style="color:var(--ink)"><b>Kit:</b> régua e stopper compacto.</p><div class="barra-kit"><i class="on"></i><i class="on"></i><i></i></div></div>
-        <div class="card cl rv"><span class="lt">C</span><h3>Compacto</h3><p>Pouca área disponível e restrição de instalação.</p><p style="color:var(--ink)"><b>Kit:</b> régua curta ou suporte de preço autorizado.</p><div class="barra-kit"><i class="on"></i><i></i><i></i></div></div>
+      <div class="cl2">
+        <div class="card preto rv"><span class="lt">A</span><h3 style="color:#fff">Estratégico</h3><p>Alto volume, espaço negociado e maior investimento.</p><div class="pecas"><span>Ponta de gôndola</span><span>Display de chão</span><span>Testeira</span><span>Stoppers</span><span>Wobblers</span></div></div>
+        <div class="card rv"><span class="lt">B</span><h3>Intermediário</h3><p>Espaço limitado, mas exposição regular.</p><div class="pecas"><span>Stopper 3D ou embalagem</span><span>Stopper “Puxe”</span><span>Wobblers</span><span>Régua</span></div></div>
+        <div class="card rv"><span class="lt">C</span><h3>Compacto</h3><p>Pouca área e restrição de instalação.</p><div class="pecas"><span>Stopper embalagem</span><span>Régua curta</span><span>Suporte de preço</span></div></div>
       </div>
       <div class="g2">
-        <div class="card preto rv"><span class="k">O que entra</span><p style="margin:0">Fixação não destrutiva, instalação sem ferramenta complexa, comunicação substituível, porta-preço livre, transporte planificado e reposição sem desmontagem. Materiais como PS, PP e papelão micro-ondulado, escolhidos por resistência, vida útil e custo.</p></div>
-        <div class="card rv"><span class="k">O que fica de fora, por enquanto</span><p style="margin:0">LED, telas, sensores e mecanismos móveis. Aumentam custo e manutenção sem ganho comprovado nesta decisão de compra. Se o piloto mostrar demanda, entram depois.</p></div>
+        <div class="card rv"><span class="k">O que entra</span><p style="margin:0">Fixação não destrutiva, instalação sem ferramenta, comunicação substituível, porta-preço livre, transporte planificado e reposição sem desmontagem. PS, PP e papelão micro-ondulado, escolhidos por resistência, vida útil e custo.</p></div>
+        <div class="card rv"><span class="k">O que fica de fora, por enquanto</span><p style="margin:0">LED, telas, sensores e mecanismos móveis: aumentam custo e manutenção sem ganho comprovado nesta decisão. Se o piloto mostrar demanda, entram depois.</p></div>
       </div>
     </div>
-    <aside class="roteiro">Para escalar, nem toda loja recebe tudo. Propomos três clusters: A, as lojas estratégicas, com bloco completo e eventual ponta; B, as intermediárias, com régua e stopper; e C, as compactas, com régua curta ou suporte de preço. E o material é pensado para a loja real: instala sem ferramenta, não danifica o mobiliário, deixa o preço livre e não atrapalha a reposição, porque peça que atrapalha o repositor é retirada. Deixamos de fora, por enquanto, LED, telas e sensores: custam mais e não há evidência de que ajudem nesta decisão.</aside>
+    <aside class="roteiro">Para escalar, nem toda loja recebe tudo. Três clusters: A, as lojas estratégicas, com ponta, display, testeira e as peças de gôndola; B, as intermediárias, com stoppers, wobblers e régua; C, as compactas, com o stopper embalagem, régua curta ou suporte de preço. E o material é pensado para a loja real: instala sem ferramenta, não danifica o mobiliário, deixa o preço livre e não atrapalha a reposição, porque peça que atrapalha o repositor é retirada. Deixamos de fora, por enquanto, LED, telas e sensores.</aside>
   </section>
 
   <!-- ===================================================== PROVA -->
 
   <section class="slide" id="medir" data-cap="Prova" data-title="Como medimos">
-    <p class="eyebrow rv">Como provamos</p>
+    <p class="eyebrow rv"><span>Como provamos</span></p>
     <h2 class="rv">Testar a leitura antes de produzir. <em>Medir a venda depois de instalar.</em></h2>
     <div class="corpo">
-      <div class="dist">
-        <div class="card rv"><div class="vis"><div class="mini" style="padding:6px 10px;font-size:15px">14 g</div></div><h3>À distância</h3><p>Marca e benefício são reconhecíveis no corredor? Simulação de ~3 a 5 m no varejo e ~5 a 8 m no atacarejo.</p></div>
-        <div class="card rv"><div class="vis"><div class="mini" style="padding:12px 20px;font-size:38px">14 g <span style="font-size:15px;color:var(--gold)">por copo 200 ml</span></div></div><h3>Aproximação</h3><p>A referência de 200 ml é compreendida sem ambiguidade?</p></div>
-        <div class="card rv"><div class="vis" style="gap:10px;display:flex;align-items:flex-end;justify-content:center;padding-bottom:16px"><img src="../assets/img/packs/biociclos-proteina-p.webp" alt="" style="height:150px;width:auto"><div style="background:#fff;border:2px solid var(--gold);border-radius:6px;padding:8px 12px;font:800 20px var(--f-d)">R$ —,—</div></div><h3>Posição de escolha</h3><p>Produto, zero lactose, preço e retirada estão claros?</p></div>
+      <div class="dist3">
+        <div class="card rv"><div class="m">5 m<small>DE LONGE</small></div><div><h3>Reconhece?</h3><p>Marca e benefício aparecem no corredor (3–5 m no varejo, 5–8 m no atacarejo).</p></div></div>
+        <div class="card rv"><div class="m">1 m<small>PERTO</small></div><div><h3>Entende?</h3><p>“14 g por copo de 200 ml” é compreendido sem ambiguidade.</p></div></div>
+        <div class="card rv"><div class="m">0 m<small>NA MÃO</small></div><div><h3>Escolhe?</h3><p>Produto, zero lactose, preço e retirada estão claros.</p></div></div>
       </div>
       <div class="medir">
         <div class="card preto rv"><h3 style="color:#fff">Negócio</h3><ul><li>Sell-out em unidades e receita</li><li>Giro por PDV</li><li>Incremento contra lojas de controle</li></ul></div>
@@ -319,18 +347,18 @@
         <div class="card rv"><h3>Operação</h3><ul><li>Tempo de instalação</li><li>Integridade das peças</li><li>Auditoria fotográfica</li></ul></div>
       </div>
     </div>
-    <aside class="roteiro">Como provamos. Em duas etapas. Antes de produzir, testamos a leitura em três distâncias: de longe, a marca e o benefício aparecem? Na aproximação, os 200 ml ficam claros? Na hora de pegar, produto, zero lactose e preço estão à vista? Depois de instalar, medimos em quatro frentes: negócio, com sell-out, giro e incremento contra lojas de controle; trade, com presença, frentes e ruptura; shopper, com reconhecimento e compreensão do benefício; e operação, com tempo de instalação e integridade das peças.</aside>
+    <aside class="roteiro">Como provamos. Em duas etapas. Antes de produzir, testamos a leitura em três distâncias: de longe, a marca e o benefício aparecem? De perto, os 200 ml ficam claros? Na mão, produto, zero lactose e preço estão à vista? Depois de instalar, medimos em quatro frentes: negócio, com sell-out, giro e incremento contra lojas de controle; trade, com presença, frentes e ruptura; shopper, com reconhecimento e compreensão do benefício; e operação, com tempo de instalação e integridade das peças.</aside>
   </section>
 
   <section class="slide" id="piloto" data-cap="Prova" data-title="Piloto">
-    <p class="eyebrow rv">Piloto</p>
+    <p class="eyebrow rv"><span>Piloto</span></p>
     <h2 class="rv">Testar pequeno, <em>escalar com prova</em>.</h2>
     <div class="corpo">
       <div class="piloto">
-        <div class="card preto rv" style="padding:28px"><span class="k">Grupo teste</span><h3 style="color:#fff;font-size:28px">Lojas com o sistema BioCiclos</h3><div class="lojas ativa"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
-        <div class="card rv" style="padding:28px"><span class="k">Grupo controle</span><h3 style="font-size:28px">Lojas comparáveis, sem alteração</h3><div class="lojas"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+        <div class="card preto rv" style="padding:28px"><span class="k">Grupo teste</span><h3 style="color:#fff;font-size:30px">Lojas com o sistema BioCiclos</h3><div class="lojas ativa"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+        <div class="card rv" style="padding:28px"><span class="k">Grupo controle</span><h3 style="font-size:30px">Lojas comparáveis, sem alteração</h3><div class="lojas"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
       </div>
-      <div class="card creme rv"><p style="margin:0;color:var(--ink);font-size:19px"><b>Avaliação:</b> comparamos vendas e execução entre os dois grupos, controlando preço, estoque, promoções, sazonalidade e diferenças entre lojas. As metas de crescimento são definidas <b>depois de conhecer o baseline</b>, nunca antes.</p></div>
+      <div class="card rv" style="background:#fff3c4"><p style="margin:0;color:var(--ink);font-size:19px"><b>Avaliação:</b> comparamos vendas e execução entre os dois grupos, controlando preço, estoque, promoções, sazonalidade e diferenças entre lojas. As metas de crescimento são definidas <b>depois de conhecer o baseline</b>, nunca antes.</p></div>
       <p class="nota rv">Número de lojas e janela de avaliação definidos com a Tirol, conforme redes, clusters e orçamento. Ilustração sem escala.</p>
     </div>
     <aside class="roteiro">Antes de escalar, um piloto controlado. Um grupo de lojas recebe o sistema; um grupo comparável fica sem alteração. Assim, a diferença de vendas e de execução pode ser atribuída ao PDV, e não a preço, promoção ou estação. Uma postura que achamos importante: não prometemos crescimento antes de conhecer o baseline. Primeiro medimos onde vocês estão; depois definimos juntos a meta. O tamanho do piloto e a janela de avaliação a gente fecha com vocês.</aside>
@@ -339,13 +367,13 @@
   <!-- ===================================================== PRÓXIMO PASSO -->
 
   <section class="slide" id="caminho" data-cap="Próximo passo" data-title="O caminho">
-    <p class="eyebrow rv">O caminho</p>
+    <p class="eyebrow rv"><span>O caminho</span></p>
     <h2 class="rv">Da descoberta à escala, <em>com aprovação em cada etapa</em>.</h2>
     <div class="corpo" style="justify-content:center">
       <div class="road rv">
         <div class="on"><div class="pt">01</div><h3>Descoberta</h3><p>Fotos, medidas, redes, ativos, dados comerciais e regras.</p><p class="out">Restrições confirmadas.</p></div>
         <div><div class="pt">02</div><h3>Estratégia</h3><p>Hierarquia, público, claim e território.</p><p class="out">Direção criativa aprovada.</p></div>
-        <div><div class="pt">03</div><h3>Criação</h3><p>Conceitos para varejo e atacarejo.</p><p class="out">Mockups de leitura distante e próxima.</p></div>
+        <div><div class="pt">03</div><h3>Criação</h3><p>Peças de varejo e atacarejo.</p><p class="out">Mockups de leitura distante e próxima.</p></div>
         <div><div class="pt">04</div><h3>Protótipo</h3><p>Especificação, fixação, testes de leitura e reposição.</p><p class="out">Protótipo validado.</p></div>
         <div><div class="pt">05</div><h3>Piloto</h3><p>Instalação em lojas selecionadas e registro da execução.</p><p class="out">Dados de execução e sell-out.</p></div>
         <div><div class="pt">06</div><h3>Aprendizado</h3><p>Análise dos resultados e ajustes por canal.</p><p class="out">Critérios de expansão.</p></div>
@@ -353,16 +381,17 @@
       </div>
       <p class="nota rv" style="margin-top:40px">Fases em sequência lógica; o calendário depende de aprovações, orçamento e disponibilidade das lojas.</p>
     </div>
-    <aside class="roteiro">O caminho tem sete etapas, cada uma com uma aprovação de vocês. Começa pela descoberta, com fotos, medidas e regras das redes. Depois estratégia e criação dos dois conceitos, protótipo testado em leitura e reposição, piloto em lojas selecionadas, aprendizado e, só então, escala para os PDVs aprovados. O calendário a gente monta junto, conforme aprovações e orçamento.</aside>
+    <aside class="roteiro">O caminho tem sete etapas, cada uma com uma aprovação de vocês. Começa pela descoberta, com fotos, medidas e regras das redes. Depois estratégia e criação das peças, protótipo testado em leitura e reposição, piloto em lojas selecionadas, aprendizado e, só então, escala para os PDVs aprovados. O calendário a gente monta junto, conforme aprovações e orçamento.</aside>
   </section>
 
   <section class="slide dark" id="proximo" data-cap="Próximo passo" data-title="Próximo passo">
-    <p class="eyebrow rv">Próximo passo</p>
+    <svg class="leite baixo" aria-hidden="true" style="height:150px;opacity:.9"><use href="#onda"/></svg>
+    <p class="eyebrow rv"><span>Próximo passo</span></p>
     <h2 class="rv" style="color:#fff">A oportunidade não está na peça mais chamativa. <em>Está no sistema que faz a Tirol ser escolhida.</em></h2>
     <div class="corpo">
       <div class="passos rv">
         <div><i>AGORA</i><h3>Insumos</h3><p>Fotos, medidas, claims e arquivos oficiais para começarmos.</p></div>
-        <div><i>EM SEGUIDA</i><h3>Dois conceitos</h3><p>Mockups de varejo e atacarejo, com prancha de racional e viabilidade.</p></div>
+        <div><i>EM SEGUIDA</i><h3>Peças finais</h3><p>Ajuste das peças por canal, com racional, materiais e viabilidade.</p></div>
         <div><i>COM PROVA</i><h3>Piloto e escala</h3><p>Lojas teste e controle; expansão com base no resultado.</p></div>
       </div>
       <div class="pedimos rv">
@@ -375,12 +404,12 @@
         <div><b>Preço e abastecimento</b>Referência de preço e disponibilidade.</div>
         <div><b>Critérios do piloto</b>Lojas teste e controle, janela de avaliação.</div>
       </div>
-      <div class="split rv" style="grid-template-columns:auto 1fr;gap:40px;align-items:center;margin-top:auto">
-        <div class="cta"><a class="prim" href="https://wa.me/5511986765634?text=Ol%C3%A1!%20Vi%20a%20proposta%20da%2075LAB%20para%20Tirol%20BioCiclos%20e%20quero%20conversar%20sobre%20os%20pr%C3%B3ximos%20passos." target="_blank" rel="noopener">Conversar com a 75LAB</a><a class="sec" href="../">Ver o planejamento completo</a></div>
+      <div class="split rv" style="grid-template-columns:auto 1fr;gap:36px;align-items:center;margin-top:6px">
+        <div class="cta"><a class="prim" href="https://wa.me/5511986765634?text=Ol%C3%A1!%20Vi%20a%20proposta%20da%2075LAB%20para%20Tirol%20BioCiclos%20e%20quero%20conversar%20sobre%20os%20pr%C3%B3ximos%20passos." target="_blank" rel="noopener"><span>Conversar com a 75LAB</span></a><a class="sec" href="../"><span>Planejamento completo</span></a></div>
         <p class="contatos"><b>Caique Becker</b> · <a href="mailto:caique.becker@75lab.com.br">caique.becker@75lab.com.br</a> · <b>Daniel Coimbra</b> · <a href="mailto:daniel.coimbra@75lab.com.br">daniel.coimbra@75lab.com.br</a><br>75lab.com.br · (11) 98676-5634</p>
       </div>
     </div>
-    <aside class="roteiro">Fechando. A oportunidade não está na peça mais chamativa, está num sistema que faz o shopper identificar a Tirol, entender o benefício e encontrar o produto sem esforço. O próximo passo é simples: com os insumos de vocês, fotos e medidas das lojas, claims aprovados, arquivos oficiais, regras das redes e orçamento, entregamos os dois conceitos, varejo e atacarejo, com a prancha de racional e viabilidade. Depois, piloto com lojas teste e controle e escala com prova. O botão leva direto ao nosso WhatsApp.</aside>
+    <aside class="roteiro">Fechando. A oportunidade não está na peça mais chamativa, está num sistema que faz o shopper identificar a Tirol, entender o benefício e encontrar o produto sem esforço. O próximo passo é simples: com os insumos de vocês, fotos e medidas das lojas, claims aprovados, arquivos oficiais, regras das redes e orçamento, ajustamos as peças por canal, com racional, materiais e viabilidade. Depois, piloto com lojas teste e controle e escala com prova. O botão leva direto ao nosso WhatsApp.</aside>
   </section>
 
   <footer id="rodape"><span id="tit"></span><span class="num" id="num"></span></footer>
@@ -389,11 +418,26 @@
   <div id="fala" role="note" aria-label="Roteiro de fala"><h4>Roteiro de fala · tecla N</h4><p></p></div>
 
   <div class="indice" id="indice" role="dialog" aria-label="Índice">
-    <h3>Índice · Tirol × 75LAB · Proposta</h3>
+    <h3>Índice · Tirol BioCiclos × 75LAB</h3>
     <div class="cols"></div>
     <p class="dica">← → navegam · M abre e fecha este índice · N roteiro de fala · F tela cheia · Home / End</p>
   </div>
 </div>
+<script>
+/* imagens dos MPDVs: procura assets/img/mpdv/<nome>.(webp|jpg|jpeg|png) e mostra o espaço reservado se não houver */
+document.querySelectorAll('.slot[data-slot]').forEach(fig => {
+  const exts = ['webp', 'jpg', 'jpeg', 'png'];
+  const tenta = i => {
+    if (i >= exts.length) return;
+    const img = new Image();
+    img.alt = fig.querySelector('.vazio b')?.textContent || '';
+    img.onload = () => { fig.prepend(img); fig.classList.add('ok'); };
+    img.onerror = () => tenta(i + 1);
+    img.src = `../assets/img/mpdv/${fig.dataset.slot}.${exts[i]}`;
+  };
+  tenta(0);
+});
+</script>
 <script src="../assets/js/deck.js"></script>
 </body>
 </html>
