@@ -13,8 +13,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,800;1,600;1,700;1,800;1,900&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/deck.css">
-<link rel="stylesheet" href="comercial.css">
+<link rel="stylesheet" href="../assets/css/deck.css?v=20261125c">
+<link rel="stylesheet" href="comercial.css?v=20261125c">
 </head>
 <body>
 
@@ -88,24 +88,24 @@
 
   <!-- 01 ===================================================== CAPA -->
   <section class="slide capa dark" id="capa" data-cap="Abertura" data-title="Tirol BioCiclos × 75LAB">
-    <svg class="leite lado" aria-hidden="true"><use href="#redemoinho"/></svg>
+    <svg class="leite lado" aria-hidden="true" style="--p:-10"><use href="#redemoinho"/></svg>
     <svg class="leite baixo" aria-hidden="true" style="height:240px"><use href="#onda"/></svg>
-    <span class="gota flut" style="left:470px;top:250px;width:20px;height:20px"></span>
-    <span class="gota flut d2" style="left:1080px;top:120px;width:14px;height:14px"></span>
-    <span class="gota flut d3" style="left:1500px;top:330px;width:24px;height:24px"></span>
-    <div class="lock rv">
+    <span class="gota flut" style="--p:40;left:470px;top:250px;width:20px;height:20px"></span>
+    <span class="gota flut d2" style="--p:40;left:1080px;top:120px;width:14px;height:14px"></span>
+    <span class="gota flut d3" style="--p:40;left:1500px;top:330px;width:24px;height:24px"></span>
+    <div class="lock rv" style="--p:-14">
       <img class="t" src="../assets/img/logos/tirol-preto.svg" alt="Tirol">
       <img class="b so-desk" src="../assets/img/logos/biociclos-preto.png" alt="BioCiclos"><img class="b so-m" src="../assets/img/logos/biociclos-branco.png" alt="BioCiclos">
       <div class="tag-evo"><span>A evolução do leite</span></div>
     </div>
-    <div class="kvtxt rv">
+    <div class="kvtxt rv" style="--p:-8">
       <span class="n">14G <small>DE</small></span>
       <span class="p">Proteína</span>
       <span class="faixa"><span>Por copo de 200 ml</span></span>
       <span class="zl">Zero lactose</span>
     </div>
-    <img class="pack rv flut" src="../assets/img/packs/biociclos-proteina.webp" alt="Embalagem Tirol BioCiclos + Proteína, 1 litro">
-    <svg class="copo rv" viewBox="0 0 120 170" aria-hidden="true"><use href="#copo-leite"/></svg>
+    <img class="pack rv flut" style="--p:22" src="../assets/img/packs/biociclos-proteina.webp" alt="Embalagem Tirol BioCiclos + Proteína, 1 litro">
+    <svg class="copo rv" style="--p:34" viewBox="0 0 120 170" aria-hidden="true"><use href="#copo-leite"/></svg>
     <div class="meta rv">
       <div>Para<b>Tirol</b></div>
       <div>Canais<b>Varejo e atacarejo</b></div>
@@ -116,7 +116,7 @@
 
   <!-- 02 ===================================================== QUEM SOMOS -->
   <section class="slide" id="quem" data-cap="Abertura" data-title="Quem é a 75LAB">
-    <span class="marca-dagua" aria-hidden="true">75</span>
+    <span class="marca-dagua" aria-hidden="true" style="--p:-30">75</span>
     <div class="quem-grid">
       <div>
         <p class="eyebrow rv"><span>Quem somos</span></p>
@@ -124,10 +124,10 @@
         <div class="fluxo-75 rv"><span>Intenção</span><span>Imersão</span><span>Solução</span><span>Execução</span><span class="ok">Resultado</span></div>
       </div>
       <div class="nums rv">
-        <div><b>95<small>%</small></b><span>projetos aprovados</span></div>
-        <div><b>−25<small>%</small></b><span>no custo de produção</span></div>
-        <div><b>15 mil<small>+</small></b><span>PDVs positivados</span></div>
-        <div><b>15<small>+</small></b><span>anos de trade</span></div>
+        <div><b><span data-conta="95">95</span><small>%</small></b><span>projetos aprovados</span></div>
+        <div><b>−<span data-conta="25">25</span><small>%</small></b><span>no custo de produção</span></div>
+        <div><b><span data-conta="15">15</span> mil<small>+</small></b><span>PDVs positivados</span></div>
+        <div><b><span data-conta="15">15</span><small>+</small></b><span>anos de trade</span></div>
       </div>
     </div>
     <div class="logos rv" style="margin-top:20px">
@@ -144,7 +144,7 @@
 
   <!-- 03 ===================================================== DESAFIO -->
   <section class="slide dark" id="desafio" data-cap="Desafio" data-title="O desafio">
-    <span class="marca-dagua" aria-hidden="true">?</span>
+    <span class="marca-dagua" aria-hidden="true" style="--p:-30">?</span>
     <p class="eyebrow rv"><span>O desafio</span></p>
     <p class="pedido rv">O pedido: <s>réguas, stoppers, blocos de marca e testeiras</s> → o que vamos resolver:</p>
     <p class="frase rv" style="font-size:58px;color:#fff;margin-top:14px;max-width:1350px">O shopper pode estar aberto a um leite com mais proteína, mas <em>não consegue perceber, entender e justificar</em> essa escolha enquanto compra leite.</p>
@@ -163,8 +163,8 @@
     <div class="corpo">
       <div class="split" style="grid-template-columns:.8fr 1.4fr;gap:60px;align-items:center">
         <div style="display:grid;gap:30px">
-          <div class="stat rv"><b>+12<small>%</small></b><p>em valor para produtos com proteína adicionada, no ano móvel até o 1º trimestre de 2026.</p></div>
-          <div class="stat rv"><b>21<small>% dos lares</small></b><p>12,8 milhões de lares já compram produtos com proteína adicionada.</p></div>
+          <div class="stat rv"><b>+<span data-conta="12">12</span><small>%</small></b><p>em valor para produtos com proteína adicionada, no ano móvel até o 1º trimestre de 2026.</p></div>
+          <div class="stat rv"><b><span data-conta="21">21</span><small>% dos lares</small></b><p>12,8 milhões de lares já compram produtos com proteína adicionada.</p></div>
         </div>
         <div class="rv">
           <h4 style="margin-bottom:16px">Proteína comunicada por copo de 200 ml · leite UHT 1 L</h4>
@@ -224,7 +224,7 @@
           </ul>
         </div>
         <div class="centro rv">
-          <div class="anel"><img src="../assets/img/logos/biociclos-preto.png" alt="BioCiclos"><img class="pk flut" src="../assets/img/packs/biociclos-proteina-p.webp" alt=""></div>
+          <div class="anel" style="--p:14"><img src="../assets/img/logos/biociclos-preto.png" alt="BioCiclos"><img class="pk flut" src="../assets/img/packs/biociclos-proteina-p.webp" alt=""></div>
           <p>Bloco BioCiclos<small>Mesmo código visual nos dois canais</small></p>
         </div>
         <div class="lado-c a rv">
@@ -349,7 +349,7 @@
 
   <!-- 12 ===================================================== CAMINHO -->
   <section class="slide dark" id="caminho" data-cap="Próximo passo" data-title="O caminho">
-    <span class="marca-dagua" aria-hidden="true">7</span>
+    <span class="marca-dagua" aria-hidden="true" style="--p:-30">7</span>
     <p class="eyebrow rv"><span>O caminho</span></p>
     <h2 class="rv">Da descoberta à escala, <em>com aprovação em cada etapa</em>.</h2>
     <div class="corpo" style="justify-content:center">
@@ -422,6 +422,33 @@ document.querySelectorAll('.slot[data-slot]').forEach(fig => {
   tenta(0);
 });
 </script>
-<script src="../assets/js/deck.js"></script>
+<script>
+/* profundidade: gotas fora de foco, paralaxe com o mouse e números que contam */
+(() => {
+  const html = document.documentElement, stage = document.getElementById('stage');
+  if (html.classList.contains('m')) return;
+  const rnd = (n => () => (n = (n * 9301 + 49297) % 233280) / 233280)(7);
+  document.querySelectorAll('.slide').forEach(sl => {
+    for (let k = 0; k < 6; k++) {
+      const b = document.createElement('span'), sz = 30 + rnd() * 140, perto = k > 3;
+      b.className = 'bokeh'; b.setAttribute('aria-hidden', 'true');
+      b.style.cssText = `width:${sz}px;height:${sz}px;left:${rnd() * 100}%;top:${rnd() * 100}%;--b:${perto ? 16 + rnd() * 10 : 4 + rnd() * 8}px;--p:${perto ? 46 : 12};opacity:${perto ? .5 : .8}`;
+      sl.prepend(b);
+    }
+  });
+  addEventListener('mousemove', e => {
+    stage.style.setProperty('--mx', (e.clientX / innerWidth * 2 - 1).toFixed(3));
+    stage.style.setProperty('--my', (e.clientY / innerHeight * 2 - 1).toFixed(3));
+  });
+  const conta = sl => sl.querySelectorAll('[data-conta]').forEach(el => {
+    if (html.classList.contains('static')) return;
+    const alvo = +el.dataset.conta, t0 = performance.now() + 500, dur = 1100;
+    const passo = t => { const k = Math.min(1, Math.max(0, (t - t0) / dur)); el.textContent = Math.round(alvo * (1 - Math.pow(1 - k, 3))); if (k < 1) requestAnimationFrame(passo); };
+    el.textContent = '0'; requestAnimationFrame(passo);
+  });
+  document.addEventListener('deck:slide', e => conta(e.detail.slide));
+})();
+</script>
+<script src="../assets/js/deck.js?v=20261125c"></script>
 </body>
 </html>

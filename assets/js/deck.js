@@ -79,6 +79,9 @@ let cur = -1;
 function go(i) {
   i = Math.max(0, Math.min(slides.length - 1, i));
   if (i === cur) return;
+  html.dataset.dir = i > cur ? 'next' : 'prev';
+  slides.forEach(x => x.classList.remove('sai'));
+  slides[cur]?.classList.add('sai');
   slides[cur]?.classList.remove('on');
   cur = i;
   const s = slides[i];
@@ -92,6 +95,7 @@ function go(i) {
   $$('#trilha button').forEach(b => b.classList.toggle('on', b.dataset.cap === s.dataset.cap));
   $$('a', ind).forEach(a => a.classList.toggle('on', +a.dataset.i === i));
   history.replaceState(null, '', '#' + s.id);
+  document.dispatchEvent(new CustomEvent('deck:slide', { detail: { slide: s, index: i } }));
   const fala = $('#fala'); if (fala) { const r = $('.roteiro', s); $('p', fala).textContent = r ? r.textContent.trim() : 'Sem roteiro para esta tela.'; }
 }
 const fromHash = () => Math.max(0, slides.findIndex(s => '#' + s.id === location.hash));
