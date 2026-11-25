@@ -387,3 +387,10 @@ html.m .slide::after { display: none; } html.m .bokeh { display: none; } html.m 
 .nums b span { display: inline; font: inherit; color: inherit; margin: 0; }
 html:not(.m) .sai .rv { opacity: 1; transform: none; filter: none; transition: none; }
 html:not(.m) .sai h2 em, html:not(.m) .sai .frase em { background-size: 100% 100%; transition: none; }
+/* tela 6: embalagem centrada no círculo, logotipo abaixo */
+.sist .centro .anel { width: 270px; height: 270px; }
+.sist .centro .anel .pk { position: absolute; left: 50%; bottom: 18px; right: auto; height: 300px; width: auto; margin-left: -66px; --r: -4deg; transform: rotate(-4deg); filter: drop-shadow(0 22px 22px rgba(0,0,0,.35)); }
+.sist .centro .lg { width: 190px; height: auto; margin-top: 34px; }
+.sist .centro p { margin-top: 10px; font-size: 20px; }
+html.m .sist .centro .anel { width: 220px; height: 220px; } html.m .sist .centro .anel .pk { height: 240px; margin-left: -53px; right: auto; bottom: 14px; }
+.static h2 em, .static .frase em { transition: none !important; }
