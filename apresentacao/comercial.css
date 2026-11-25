@@ -416,3 +416,4 @@ html.m .sist .centro .anel { width: 220px; height: 220px; } html.m .sist .centro
 .ocas3 h3 { color: #fff; font-size: 22px; } .ocas3 p { margin: 0; font-size: 15px; color: #bdbdbd; }
 html.m .retr, html.m .wob2, html.m .ocas3 { grid-template-columns: 1fr !important; }
 html.m .esq-w { grid-template-rows: auto; } html.m .seta-retr { flex-direction: row; }
+.ata { grid-template-columns: 2fr .78fr .9fr; } .ata .txt .card { padding: 14px 18px; } .ata .txt .card p { font-size: 15.5px; }
