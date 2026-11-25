@@ -23,9 +23,9 @@ Cada capítulo abre com uma tela-divisória dourada.
 
 ## Apresentação comercial (`apresentacao/`)
 
-Versão para o cliente (15 telas), com a linguagem do KV BioCiclos + Proteína: preto, ondas de leite e copo em SVG, amarelo, Barlow Condensed em itálico, faixas inclinadas, ícones, gráfico de barras e diagramas.
-Fio: Abertura → Desafio → Por quê → A ideia → As peças → Prova → Próximo passo.
-1 Capa KV · 2 Quem é a 75LAB · 3 O desafio (ver, entender, escolher) · 4 Por que agora (mercado + comparativo de proteína por copo) · 5 A ideia (70 g/L → 14 g/copo e três camadas) · 6 Sistema: uma linguagem, duas arquiteturas · 7 Abertura das peças (colagem e as sete peças por canal) · 8 Display retrátil (fechado e aberto) · 9 Wobblers de ocasião e stopper 3D · 10 Régua de gôndola (anatomia e hierarquia) · 11 Atacarejo e lojas estratégicas (testeira, ponta, display caixa de leite) · 12 Kits por loja e operação · 13 Como provamos (leitura em 3 distâncias, KPIs e piloto) · 14 O caminho · 15 Próximo passo.
+Versão para o cliente (10 telas), com a linguagem do KV BioCiclos + Proteína: preto, ondas de leite e copo em SVG, amarelo, Barlow Condensed em itálico, faixas inclinadas, ícones, gráfico de barras e diagramas.
+Fio: Abertura → Desafio → A ideia → As peças → Prova → Próximo passo.
+1 Capa KV · 2 Quem é a 75LAB · 3 O desafio e por que agora (ver, entender, escolher + mercado e comparativo de proteína por copo) · 4 A ideia (70 g/L → 14 g/copo e três camadas) · 5 As peças (colagem e as sete peças por canal) · 6 Varejo na prateleira: display retrátil e wobblers (arte e aplicados) · 7 Varejo no bloco: stopper 3D e régua de gôndola · 8 Atacarejo: testeira, ponta de gôndola e display caixa de leite · 9 Escala e prova: kits A/B/C, leitura em 3 distâncias e piloto · 10 Próximo passo: 7 etapas, insumos e contato.
 
 Cada tela tem roteiro de fala (`aside.roteiro`, tecla **N**). Usa o motor de `../assets/` e a pele `apresentacao/comercial.css`.
 
