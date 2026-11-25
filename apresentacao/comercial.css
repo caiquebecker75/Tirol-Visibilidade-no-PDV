@@ -471,3 +471,9 @@ html.m .pi-colagem { height: 420px; transform: scale(.62); transform-origin: top
 .anat-leg span { display: flex; align-items: center; gap: 6px; font: italic 800 15px var(--f-d); text-transform: uppercase; }
 .anat-leg i { width: 22px; height: 22px; border-radius: 50%; background: var(--y); display: grid; place-items: center; font: italic 900 13px var(--f-d); }
 html.m .reg { grid-template-columns: 1fr; } html.m .anat { grid-template-columns: 1fr; height: auto; padding: 8px 0 18px; gap: 6px; }
+/* tela 9: arte dos wobblers + aplicação na gôndola + stopper 3D */
+.wob2 { grid-template-columns: 1.55fr .78fr .78fr; gap: 16px; }
+.wob2 .ocas3 > div { grid-template-columns: 36px 1fr; padding: 10px 12px; gap: 10px; }
+.wob2 .ocas3 .ico { width: 36px; height: 36px; }
+.wob2 .ocas3 h3 { font-size: 19px; } .wob2 .ocas3 p { font-size: 13.5px; }
+html.m .wob2 { grid-template-columns: 1fr !important; }
