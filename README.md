@@ -27,7 +27,7 @@ Versão para o cliente (10 telas), com a linguagem do KV BioCiclos + Proteína: 
 Fio: Abertura → Desafio → A ideia → As peças → Prova → Próximo passo.
 1 Capa KV · 2 Quem é a 75LAB · 3 O desafio e por que agora (ver, entender, escolher + mercado e comparativo de proteína por copo) · 4 A ideia (70 g/L → 14 g/copo e três camadas) · 5 As peças (colagem e as sete peças por canal) · 6 Varejo na prateleira: display retrátil e wobblers (arte e aplicados) · 7 Varejo no bloco: stopper 3D e régua de gôndola · 8 Atacarejo: testeira, ponta de gôndola e display caixa de leite · 9 Escala e prova: kits A/B/C, leitura em 3 distâncias e piloto · 10 Próximo passo: 7 etapas, insumos e contato.
 
-Cada tela tem roteiro de fala (`aside.roteiro`, tecla **N**). Usa o motor de `../assets/` e a pele `apresentacao/comercial.css`.
+Cada tela tem roteiro de fala (`aside.roteiro`, tecla **N**). Clicar em qualquer imagem dos MPDVs (ou na embalagem) amplia em tela cheia; Esc ou clique fecha. Usa o motor de `../assets/` e a pele `apresentacao/comercial.css`.
 
 **Imagens dos MPDVs:** salve em `assets/img/mpdv/` com os nomes de `assets/img/mpdv/LEIA-ME.md` (`display-retratil-fechado`, `display-retratil-aberto`, `stopper-copo`, `wobblers`, `testeira-atacarejo`, `ponta-gondola`, `display-chao`; `.jpg`, `.png` ou `.webp`). Elas aparecem sozinhas no lugar reservado; sem a imagem, a tela mostra o nome do arquivo esperado.
 

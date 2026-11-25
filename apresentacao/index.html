@@ -13,8 +13,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,800;1,600;1,700;1,800;1,900&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/deck.css?v=20261125q">
-<link rel="stylesheet" href="comercial.css?v=20261125q">
+<link rel="stylesheet" href="../assets/css/deck.css?v=20261125r">
+<link rel="stylesheet" href="comercial.css?v=20261125r">
 </head>
 <body>
 
@@ -103,7 +103,7 @@
       <span class="faixa"><span>Por copo de 200 ml</span></span>
       <span class="zl">Zero lactose</span>
     </div>
-    <img class="pack rv flut" style="--p:22" src="../assets/img/packs/biociclos-proteina.webp" alt="Embalagem Tirol BioCiclos + Proteína, 1 litro">
+    <img class="pack rv flut zoomavel" style="--p:22" src="../assets/img/packs/biociclos-proteina.webp" alt="Embalagem Tirol BioCiclos + Proteína, 1 litro">
     <svg class="copo rv" style="--p:34" viewBox="0 0 120 170" aria-hidden="true"><use href="#copo-leite"/></svg>
     <div class="meta rv">
       <div>Para<b>Tirol</b></div>
@@ -385,6 +385,26 @@ document.querySelectorAll('.slot[data-slot]').forEach(fig => {
   document.addEventListener('deck:slide', e => conta(e.detail.slide));
 })();
 </script>
-<script src="../assets/js/deck.js?v=20261125q"></script>
+<div id="zoom" role="dialog" aria-modal="true" aria-label="Imagem ampliada" hidden><img alt=""><p></p><button type="button" aria-label="Fechar">×</button></div>
+<script>
+/* ampliar imagens ao clicar */
+(() => {
+  const z = document.getElementById('zoom'), zi = z.querySelector('img'), zp = z.querySelector('p');
+  const abrir = (src, alt) => { zi.src = src; zi.alt = alt || ''; zp.textContent = alt || ''; z.hidden = false; requestAnimationFrame(() => z.classList.add('on')); };
+  const fechar = () => { z.classList.remove('on'); setTimeout(() => { z.hidden = true; zi.src = ''; }, 250); };
+  document.addEventListener('click', e => {
+    if (!z.hidden) { fechar(); return; }
+    const fig = e.target.closest('.slot.ok, .zoomavel');
+    if (!fig) return;
+    const img = fig.matches('img') ? fig : fig.querySelector('img');
+    if (!img) return;
+    e.preventDefault(); e.stopPropagation();
+    const cap = fig.querySelector?.('figcaption')?.textContent || img.alt;
+    abrir(img.currentSrc || img.src, cap);
+  }, true);
+  addEventListener('keydown', e => { if (!z.hidden) { e.stopImmediatePropagation(); e.preventDefault(); if (e.key === 'Escape' || e.key === ' ' || e.key === 'Enter') fechar(); } }, true);
+})();
+</script>
+<script src="../assets/js/deck.js?v=20261125r"></script>
 </body>
 </html>
