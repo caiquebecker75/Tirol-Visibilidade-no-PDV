@@ -1,0 +1,110 @@
+/* =========================================================================
+   Tirol × 75LAB · apresentação comercial
+   Complementa ../assets/css/deck.css (mesmo palco, paleta e componentes).
+   ========================================================================= */
+.roteiro { display: none; }
+
+/* roteiro de fala (tecla N) */
+#fala { position: absolute; left: 88px; right: 88px; bottom: 56px; z-index: 20; background: rgba(17,17,17,.96); color: #eee; border-radius: 14px; padding: 18px 24px 20px; display: none; border-top: 4px solid var(--gold); box-shadow: 0 20px 50px rgba(0,0,0,.35); }
+#fala.on { display: block; }
+#fala h4 { color: var(--gold-l); margin-bottom: 8px; font-size: 12px; }
+#fala p { color: #e6e6e6; font-size: 17px; line-height: 1.5; }
+
+/* capa comercial */
+.capa .para { font-size: 13px; letter-spacing: .1em; text-transform: uppercase; color: #8d8d8d; }
+.capa h1.prop { font-size: 128px; line-height: .9; }
+.capa h1.prop span { display: inline; }
+.capa .sub { font: 800 34px/1.15 var(--f-d); font-stretch: 90%; color: #fff; margin-top: 26px; max-width: 760px; letter-spacing: -.01em; }
+.capa .sub em { color: var(--gold-l); }
+
+/* quem somos */
+.fluxo-75 { display: flex; gap: 10px; flex-wrap: wrap; }
+.fluxo-75 span { font: 700 15px var(--f-t); letter-spacing: .06em; text-transform: uppercase; border: 1.5px solid var(--ink); border-radius: 99px; padding: 10px 18px; }
+.fluxo-75 span + span::before { content: '→ '; color: var(--gold-t); }
+.fluxo-75 span.ok { background: var(--ink); color: #fff; }
+.fluxo-75 span.ok::before { color: var(--gold-l); }
+.nums { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+.nums > div { border-top: 3px solid var(--ink); padding-top: 14px; }
+.nums b { display: block; font: 800 72px/1 var(--f-d); font-stretch: 85%; letter-spacing: -.03em; }
+.nums b small { font-size: .45em; color: var(--gold-t); }
+.nums span { display: block; margin-top: 6px; font-size: 17px; color: var(--ink2); }
+.logos { display: grid; grid-template-columns: repeat(8, 1fr); gap: 12px; }
+.logos div { background: #fff; border: 1px solid var(--line); border-radius: 10px; height: 92px; display: grid; place-items: center; padding: 12px; }
+.logos img { max-width: 100%; max-height: 58px; object-fit: contain; }
+
+/* tradução 70 g/L → 14 g/copo */
+.traduz { display: grid; grid-template-columns: 1fr 90px 1fr; align-items: center; gap: 0; }
+.traduz .lado { border-radius: 18px; padding: 34px 36px; text-align: center; }
+.traduz .lado.a { background: #fff; border: 1px solid var(--line); }
+.traduz .lado.b { background: var(--ink); color: #fff; }
+.traduz .lado b { display: block; font: 800 120px/.9 var(--f-d); font-stretch: 82%; letter-spacing: -.04em; }
+.traduz .lado.a b { color: #b9b4a8; }
+.traduz .lado.b b { color: var(--gold); }
+.traduz .lado span { display: block; font: 700 16px var(--f-t); letter-spacing: .12em; text-transform: uppercase; margin-top: 10px; }
+.traduz .lado.a span { color: var(--mute); }
+.traduz .lado p { margin-top: 14px; font-size: 17px; }
+.traduz .lado.b p { color: #cfcfcf; }
+.traduz .seta { text-align: center; font: 800 54px var(--f-d); color: var(--gold); }
+
+/* camadas da ideia */
+.camadas { display: grid; gap: 12px; }
+.camadas > div { display: grid; grid-template-columns: 210px 1fr; align-items: center; gap: 22px; border-radius: 14px; padding: 20px 26px; background: #fff; border: 1px solid var(--line); }
+.camadas > div h4 { margin: 0; }
+.camadas > div p { margin: 0; font-size: 18px; }
+.camadas > div .t { font: 800 34px/1 var(--f-d); font-stretch: 88%; letter-spacing: -.02em; }
+.camadas > div.c1 { background: var(--ink); border-color: var(--ink); }
+.camadas > div.c1 h4 { color: var(--gold-l); } .camadas > div.c1 .t { color: #fff; } .camadas > div.c1 p { color: #cfcfcf; }
+.camadas > div.c2 { background: var(--gold); border-color: var(--gold); }
+.camadas > div.c2 h4, .camadas > div.c2 p { color: var(--ink); }
+
+/* prova: ciclo de medição */
+.medir { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.medir .card h3 { font-size: 22px; margin-bottom: 10px; }
+.medir .card ul { list-style: none; display: grid; gap: 6px; }
+.medir .card li { font-size: 16.5px; color: var(--ink2); padding-left: 16px; position: relative; line-height: 1.35; }
+.medir .card li::before { content: ''; position: absolute; left: 0; top: 8px; width: 7px; height: 7px; border-radius: 50%; background: var(--gold); }
+.medir .card.preto li { color: #d6d6d6; }
+
+/* piloto */
+.piloto { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.lojas { display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px; margin-top: 16px; }
+.lojas i { aspect-ratio: 1; border-radius: 8px; background: var(--line); display: block; }
+.lojas.ativa i { background: var(--ink); box-shadow: inset 0 -8px 0 var(--gold); }
+
+/* próximo passo */
+.passos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; }
+.passos > div { padding: 26px 28px; border: 1px solid #333; }
+.passos > div + div { border-left: 0; }
+.passos > div:first-child { border-radius: 14px 0 0 14px; background: var(--gold); border-color: var(--gold); }
+.passos > div:last-child { border-radius: 0 14px 14px 0; }
+.passos i { font: 800 15px var(--f-d); font-style: normal; color: var(--gold-l); letter-spacing: .1em; }
+.passos > div:first-child i, .passos > div:first-child h3, .passos > div:first-child p { color: var(--ink); }
+.passos h3 { color: #fff; font-size: 30px; margin-top: 8px; }
+.passos p { margin-top: 8px; font-size: 17px; }
+.cta { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; position: relative; z-index: 12; }
+.cta a { font: 700 17px var(--f-t); text-decoration: none; border-radius: 99px; padding: 15px 26px; }
+.cta a.prim { background: var(--gold); color: var(--ink); }
+.cta a.sec { border: 1.5px solid #555; color: #fff; }
+.contatos { font-size: 15px; color: #9a9a9a; line-height: 1.6; }
+.contatos b { color: #fff; font-weight: 600; }
+.contatos a { color: #ccc; text-decoration: none; }
+.pedimos { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+.pedimos div { border: 1px solid #333; border-radius: 10px; padding: 12px 14px; font-size: 15px; color: #cfcfcf; line-height: 1.35; }
+.pedimos div b { display: block; color: #fff; margin-bottom: 2px; }
+
+/* celular */
+html.m #fala { display: none !important; }
+html.m .capa h1.prop { font-size: 64px; }
+html.m .capa .sub { font-size: 24px; }
+html.m .nums, html.m .logos, html.m .medir, html.m .piloto, html.m .passos, html.m .pedimos { grid-template-columns: 1fr 1fr !important; gap: 10px !important; }
+html.m .nums b { font-size: 48px; }
+html.m .logos div { height: 70px; }
+html.m .traduz { grid-template-columns: 1fr; }
+html.m .traduz .seta { transform: rotate(90deg); }
+html.m .traduz .lado b { font-size: 76px; }
+html.m .camadas > div { grid-template-columns: 1fr; gap: 6px; }
+html.m .camadas > div .t { font-size: 26px; }
+html.m .passos > div { border-radius: 12px !important; border-left: 1px solid #333 !important; }
+html.m .medir, html.m .passos, html.m .pedimos { grid-template-columns: 1fr !important; }
+.indice .cols { grid-template-columns: repeat(4, 1fr); }
+.card.preto .lojas.ativa i { background: var(--gold); box-shadow: none; }

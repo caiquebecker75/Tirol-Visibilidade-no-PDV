@@ -2,7 +2,10 @@
 
 Planejamento estratégico da 75LAB para a Tirol em formato de apresentação navegável: transformar o espaço de exposição do **BioCiclos + Proteína 70 g** em um ponto de reconhecimento e decisão no varejo alimentar e no atacarejo, com **14 g no seu dia** como território principal.
 
-Publicação prevista: https://projetos.75lab.com.br/tirol-visibilidade-no-pdv/ (quando o GitHub Pages estiver ativo no repositório).
+Dois documentos no mesmo repositório (publicação prevista quando o GitHub Pages estiver ativo):
+
+- **Planejamento estratégico** (uso interno, 40 telas): https://projetos.75lab.com.br/tirol-visibilidade-no-pdv/
+- **Apresentação comercial** (para a Tirol, 16 telas, com roteiro de fala): https://projetos.75lab.com.br/tirol-visibilidade-no-pdv/apresentacao
 
 Fonte do conteúdo: `Tirol_Visibilidade_PDV_Planejamento_Estrategico_75LAB.pdf` (17 páginas, 19/nov/2026). O PDF fica fora do Git.
 
@@ -18,9 +21,16 @@ Fonte do conteúdo: `Tirol_Visibilidade_PDV_Planejamento_Estrategico_75LAB.pdf` 
 
 Cada capítulo abre com uma tela-divisória dourada.
 
+## Apresentação comercial (`apresentacao/`)
+
+Versão para o cliente, no fio Objetivo → Por quê → A ideia → Como → Prova → Próximo passo:
+1 Capa "14 g no seu dia" · 2 Quem é a 75LAB · 3 O objetivo · 4 Por que agora · 5 O que acontece no corredor · 6 Traduzir o benefício (70 g/L → 14 g/copo) · 7 A ideia em três camadas · 8 Linguagem do sistema · 9 Um sistema, duas arquiteturas · 10 Varejo · 11 Atacarejo · 12 Kits por loja e operação · 13 Como medimos · 14 Piloto · 15 O caminho · 16 Próximo passo (insumos, contato e WhatsApp).
+
+Cada tela tem um roteiro de fala (`aside.roteiro`), aberto com a tecla **N**. Usa o mesmo motor e a mesma folha de estilo do planejamento (`../assets/`), mais `apresentacao/comercial.css`. Logos de clientes em `assets/img/clientes/` (os mesmos da proposta Ferrero).
+
 ## Navegação
 
-← → ou espaço avançam · clique nas bordas da tela · **M** índice · **F** tela cheia · Home/End · os botões do topo levam ao início de cada capítulo.
+← → ou espaço avançam · clique nas bordas da tela · **M** índice · **N** roteiro de fala (apresentação comercial) · **F** tela cheia · Home/End · os botões do topo levam ao início de cada capítulo.
 No celular, as telas viram uma página de rolagem; tocar no topo abre o índice.
 QA: `?static` (sem animação), `?desktop` (força o palco no celular).
 

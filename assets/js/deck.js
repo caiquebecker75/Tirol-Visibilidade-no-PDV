@@ -1,7 +1,7 @@
 /* =========================================================================
    Tirol · Visibilidade no PDV × 75LAB · motor da apresentação
    HTML, CSS e JS puros, sem dependências.
-   Teclas: ← → (ou espaço) navegam · M índice · F tela cheia · Home/End.
+   Teclas: ← → (ou espaço) navegam · M índice · F tela cheia · N roteiro de fala (se houver) · Home/End.
    QA: ?static (sem movimento) · ?desktop (força palco no celular)
    ========================================================================= */
 (() => {
@@ -91,6 +91,7 @@ function go(i) {
   $$('#trilha button').forEach(b => b.classList.toggle('on', b.dataset.cap === s.dataset.cap));
   $$('a', ind).forEach(a => a.classList.toggle('on', +a.dataset.i === i));
   history.replaceState(null, '', '#' + s.id);
+  const fala = $('#fala'); if (fala) { const r = $('.roteiro', s); $('p', fala).textContent = r ? r.textContent.trim() : 'Sem roteiro para esta tela.'; }
 }
 const fromHash = () => Math.max(0, slides.findIndex(s => '#' + s.id === location.hash));
 
@@ -111,6 +112,7 @@ if (mobile) {
     else if (k === 'Home') go(0);
     else if (k === 'End') go(slides.length - 1);
     else if (k === 'm' || k === 'M') toggleInd();
+    else if ((k === 'n' || k === 'N') && $('#fala')) $('#fala').classList.toggle('on');
     else if (k === 'Escape') toggleInd(false);
     else if (k === 'f' || k === 'F') { document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen?.(); }
   });
