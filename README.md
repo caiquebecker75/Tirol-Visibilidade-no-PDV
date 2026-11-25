@@ -23,9 +23,9 @@ Cada capítulo abre com uma tela-divisória dourada.
 
 ## Apresentação comercial (`apresentacao/`)
 
-Versão para o cliente (17 telas), com a linguagem do KV BioCiclos + Proteína: preto, ondas de leite (SVG), amarelo, Barlow Condensed em itálico e faixas inclinadas.
-Fio: Abertura → Objetivo → Por quê → A ideia → As peças → Prova → Próximo passo.
-1 Capa KV · 2 Quem é a 75LAB · 3 O objetivo · 4 Por que agora · 5 O que acontece no corredor · 6 A ideia (70 g/L → 14 g/copo e três camadas) · 7 Linguagem · 8 Família de peças · 9 Na gôndola: stoppers · 10 Wobblers de ocasião · 11 Atacarejo: testeira · 12 Ponta de gôndola e display · 13 Kits por loja · 14 Como medimos · 15 Piloto · 16 O caminho · 17 Próximo passo.
+Versão para o cliente (13 telas), com a linguagem do KV BioCiclos + Proteína: preto, ondas de leite e copo em SVG, amarelo, Barlow Condensed em itálico, faixas inclinadas, ícones, gráfico de barras e diagramas.
+Fio: Abertura → Desafio → Por quê → A ideia → As peças → Prova → Próximo passo.
+1 Capa KV · 2 Quem é a 75LAB · 3 O desafio (ver, entender, escolher) · 4 Por que agora (mercado + comparativo de proteína por copo) · 5 A ideia (70 g/L → 14 g/copo e três camadas) · 6 Sistema: uma linguagem, duas arquiteturas · 7 Stoppers na gôndola · 8 Wobblers de ocasião · 9 Atacarejo e lojas estratégicas (testeira, ponta, display) · 10 Kits por loja e operação · 11 Como provamos (leitura em 3 distâncias, KPIs e piloto) · 12 O caminho · 13 Próximo passo.
 
 Cada tela tem roteiro de fala (`aside.roteiro`, tecla **N**). Usa o motor de `../assets/` e a pele `apresentacao/comercial.css`.
 
