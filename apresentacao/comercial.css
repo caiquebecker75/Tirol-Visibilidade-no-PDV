@@ -394,3 +394,25 @@ html:not(.m) .sai h2 em, html:not(.m) .sai .frase em { background-size: 100% 100
 .sist .centro p { margin-top: 10px; font-size: 20px; }
 html.m .sist .centro .anel { width: 220px; height: 220px; } html.m .sist .centro .anel .pk { height: 240px; margin-left: -53px; right: auto; bottom: 14px; }
 .static h2 em, .static .frase em { transition: none !important; }
+
+/* tela 7: display retrátil */
+.retr { display: grid; grid-template-columns: 1fr 70px 1fr 1.05fr; gap: 18px; flex: 1; min-height: 0; align-items: stretch; }
+.seta-retr { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; }
+.seta-retr span { font: italic 900 30px/1 var(--f-d); text-transform: uppercase; background: var(--y); padding: 8px 10px 6px; transform: skewX(-12deg); }
+.seta-retr .ico { width: 44px; height: 44px; color: var(--ink); animation: puxa 1.6s ease-in-out infinite; }
+@keyframes puxa { 0%,100% { transform: translateY(-6px); } 50% { transform: translateY(10px); } }
+.static .seta-retr .ico { animation: none; }
+.retr-txt { display: grid; gap: 12px; align-content: center; }
+.passo { display: grid; grid-template-columns: 46px 1fr; gap: 14px; align-items: start; }
+.passo i { width: 46px; height: 46px; border-radius: 50%; background: var(--ink); color: var(--y); display: grid; place-items: center; font: italic 900 24px var(--f-d); box-shadow: 0 10px 20px -8px rgba(0,0,0,.5); }
+.passo h3 { font-size: 28px; }
+.passo p { margin: 2px 0 0; font-size: 17px; }
+/* tela 8: wobblers + stopper 3D */
+.wob2 { display: grid; grid-template-columns: 2.1fr 1fr; gap: 20px; flex: 1; min-height: 0; }
+.esq-w { display: grid; grid-template-rows: 1fr auto; gap: 14px; min-height: 0; }
+.ocas3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.ocas3 > div { display: grid; grid-template-columns: 44px 1fr; gap: 12px; align-items: center; background: #161616; border: 1px solid #262626; border-radius: 14px; padding: 12px 14px; box-shadow: inset 0 1px 0 rgba(255,255,255,.07), 0 30px 60px -20px rgba(0,0,0,.9); }
+.ocas3 .ico { width: 44px; height: 44px; color: var(--y); }
+.ocas3 h3 { color: #fff; font-size: 22px; } .ocas3 p { margin: 0; font-size: 15px; color: #bdbdbd; }
+html.m .retr, html.m .wob2, html.m .ocas3 { grid-template-columns: 1fr !important; }
+html.m .esq-w { grid-template-rows: auto; } html.m .seta-retr { flex-direction: row; }

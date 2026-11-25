@@ -4,9 +4,9 @@ Salve cada imagem nesta pasta com o nome abaixo (`.jpg`, `.png` ou `.webp`). Ela
 
 | Arquivo | Peça | Tela |
 |---|---|---|
-| `gondola-clip` | Gôndola com stopper embalagem + copo "14 g" no trilho de preço | Na gôndola |
-| `stopper-copo` | Stopper 3D: embalagem servindo o copo | Na gôndola |
-| `stopper-puxe` | Stopper "Puxe" com ocasiões de uso | Na gôndola |
+| `display-retratil-fechado` | Display retrátil fechado no trilho (mini embalagem + copo "14 g") | Display retrátil |
+| `display-retratil-aberto` | Display retrátil puxado (tira com ocasiões) | Display retrátil |
+| `stopper-copo` | Stopper 3D: embalagem servindo o copo | Wobblers e stopper 3D |
 | `wobblers` | Três wobblers: café da manhã, vitamina, café com leite | Wobblers de ocasião |
 | `testeira-atacarejo` | Testeira larga sobre o volume no atacarejo | Atacarejo |
 | `ponta-gondola` | Ponta de gôndola BioCiclos | Ponta e display |

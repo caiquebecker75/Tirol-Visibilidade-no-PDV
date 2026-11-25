@@ -25,11 +25,11 @@ Cada capítulo abre com uma tela-divisória dourada.
 
 Versão para o cliente (13 telas), com a linguagem do KV BioCiclos + Proteína: preto, ondas de leite e copo em SVG, amarelo, Barlow Condensed em itálico, faixas inclinadas, ícones, gráfico de barras e diagramas.
 Fio: Abertura → Desafio → Por quê → A ideia → As peças → Prova → Próximo passo.
-1 Capa KV · 2 Quem é a 75LAB · 3 O desafio (ver, entender, escolher) · 4 Por que agora (mercado + comparativo de proteína por copo) · 5 A ideia (70 g/L → 14 g/copo e três camadas) · 6 Sistema: uma linguagem, duas arquiteturas · 7 Stoppers na gôndola · 8 Wobblers de ocasião · 9 Atacarejo e lojas estratégicas (testeira, ponta, display) · 10 Kits por loja e operação · 11 Como provamos (leitura em 3 distâncias, KPIs e piloto) · 12 O caminho · 13 Próximo passo.
+1 Capa KV · 2 Quem é a 75LAB · 3 O desafio (ver, entender, escolher) · 4 Por que agora (mercado + comparativo de proteína por copo) · 5 A ideia (70 g/L → 14 g/copo e três camadas) · 6 Sistema: uma linguagem, duas arquiteturas · 7 Display retrátil (fechado e aberto) · 8 Wobblers de ocasião e stopper 3D · 9 Atacarejo e lojas estratégicas (testeira, ponta, display) · 10 Kits por loja e operação · 11 Como provamos (leitura em 3 distâncias, KPIs e piloto) · 12 O caminho · 13 Próximo passo.
 
 Cada tela tem roteiro de fala (`aside.roteiro`, tecla **N**). Usa o motor de `../assets/` e a pele `apresentacao/comercial.css`.
 
-**Imagens dos MPDVs:** salve em `assets/img/mpdv/` com os nomes de `assets/img/mpdv/LEIA-ME.md` (`gondola-clip`, `stopper-copo`, `stopper-puxe`, `wobblers`, `testeira-atacarejo`, `ponta-gondola`, `display-chao`; `.jpg`, `.png` ou `.webp`). Elas aparecem sozinhas no lugar reservado; sem a imagem, a tela mostra o nome do arquivo esperado.
+**Imagens dos MPDVs:** salve em `assets/img/mpdv/` com os nomes de `assets/img/mpdv/LEIA-ME.md` (`display-retratil-fechado`, `display-retratil-aberto`, `stopper-copo`, `wobblers`, `testeira-atacarejo`, `ponta-gondola`, `display-chao`; `.jpg`, `.png` ou `.webp`). Elas aparecem sozinhas no lugar reservado; sem a imagem, a tela mostra o nome do arquivo esperado.
 
 Logotipo BioCiclos (`assets/img/logos/biociclos-preto.png` e `-branco.png`) recortado do banner oficial do site tirol.com.br.
 
