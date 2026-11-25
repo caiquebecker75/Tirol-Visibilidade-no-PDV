@@ -2,10 +2,10 @@
 
 Planejamento estratégico da 75LAB para a Tirol em formato de apresentação navegável: transformar o espaço de exposição do **BioCiclos + Proteína 70 g** em um ponto de reconhecimento e decisão no varejo alimentar e no atacarejo, com **14 g no seu dia** como território principal.
 
-Dois documentos no mesmo repositório (publicação prevista quando o GitHub Pages estiver ativo):
+Dois documentos no mesmo repositório (publicados pelo GitHub Pages; o endereço diferencia maiúsculas de minúsculas):
 
-- **Planejamento estratégico** (uso interno, 40 telas): https://projetos.75lab.com.br/tirol-visibilidade-no-pdv/
-- **Apresentação comercial** (para a Tirol, 16 telas, com roteiro de fala): https://projetos.75lab.com.br/tirol-visibilidade-no-pdv/apresentacao
+- **Planejamento estratégico** (uso interno, 40 telas): https://projetos.75lab.com.br/Tirol-Visibilidade-no-PDV/
+- **Apresentação comercial** (para a Tirol, 16 telas, com roteiro de fala): https://projetos.75lab.com.br/Tirol-Visibilidade-no-PDV/apresentacao
 
 Fonte do conteúdo: `Tirol_Visibilidade_PDV_Planejamento_Estrategico_75LAB.pdf` (17 páginas, 19/nov/2026). O PDF fica fora do Git.
 
